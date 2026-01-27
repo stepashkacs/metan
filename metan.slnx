@@ -1,0 +1,7 @@
+<Solution>
+  <Configurations>
+    <Platform Name="x64" />
+    <Platform Name="x86" />
+  </Configurations>
+  <Project Path="metan/metan.vcxproj" Id="bba97d1d-21e4-47e5-97ba-1d1c9c0eda3f" />
+</Solution>
