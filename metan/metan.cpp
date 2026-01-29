@@ -137,3 +137,34 @@
 //	std::cout << "pi = " << pi << std::endl;
 //}
 
+//int main()
+//{
+//	int age{ 25 };
+//	double height{ 81 };
+//	std::cout << "Name: " << "Tom" << std::endl;
+//	std::cout << "Age: " << age << std::endl;
+//	std::cout << "Height: " << height << std::endl;
+//}
+
+
+
+//int main()
+//{
+//	int age;
+//	double  weight;
+//	std::cout << "Input Age: ";
+//	std::cin >> age;
+//	std::cout << "Input Weight: ";
+//	std::cin >> weight;
+//	std::cout << "Age: " << age << "\t Weight: " << weight << std::endl;
+//}	
+
+
+//int main()
+//{
+//	int age;
+//	double weight;
+//	std::cout << "Input Age and Weight: ";
+//	std::cin >> age >> weight;
+//	std::cout << "Age: " << age << "\tWeight: " << weight << std::endl;
+//}
