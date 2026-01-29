@@ -98,10 +98,42 @@
 //	std::cout << "sizeof(number) =" << sizeof(number);
 //}
 
-int main()
-{
-	char a1{ 'A' };
-	char a2{ 65 };
-	std::cout << "a1 = " << a1 << std::endl;
-	std::cout << "a2 = " << a2 << std::endl;
-}
+//int main()
+//{
+//	char a1{ 'A' };
+//	char a2{ 65 };
+//	wchar_t a3{ L'A' };
+//	wchar_t a4{ L'\x41' };
+//	std::cout << "a1 = " << a1 << std::endl;
+//	std::cout << "a2 = " << a2 << std::endl;
+//	std::wcout << "a3 = " << a3 << std::endl;
+//	std::wcout << "a4 = " << a4 << std::endl;
+//}
+
+
+
+//int main()
+//{
+//	auto num = 5;
+//	auto sum = 1234.56 ;
+//	auto distance = 267UL;
+//	std::cout << "num type : " << typeid(num).name() << std::endl;
+//	std::cout << "sum type : " << typeid(sum).name() << std::endl;
+//	std::cout << "distance type : " << typeid(distance).name() << std::endl;
+//}
+
+
+//int main()
+//{
+//	const int age{ 22 };
+//	int a{ 5 };
+//	const int b{ a };
+//	const int c{ b };
+//	std::cout << "age = " << age << std::endl;
+//	std::cout << "a = " << a << std::endl;
+//	std::cout << "b = " << b << std::endl;
+//	std::cout << "c = " << c << std::endl;
+//	const float pi{ 3.14 };
+//	std::cout << "pi = " << pi << std::endl;
+//}
+
