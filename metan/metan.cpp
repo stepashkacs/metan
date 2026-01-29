@@ -168,3 +168,33 @@
 //	std::cin >> age >> weight;
 //	std::cout << "Age: " << age << "\tWeight: " << weight << std::endl;
 //}
+
+
+//using std::cout;
+//using std::cin;
+//using std::endl;
+//
+//int main()
+//{
+//	int age;
+//	cout << "Input Age: ";
+//	cin >> age;
+//	cout << "Your age: " << age << endl;
+//}
+
+
+//using ullong = unsigned long long;
+//using std::cout;
+//int main()
+//{
+//	ullong n{ 1234 };
+//	cout << "n: " << n << std::endl;
+//}
+
+
+typedef unsigned long long ullong;
+int main()
+{
+	ullong n { 1234 };
+	std::cout << "n: " << n << std::endl;
+}
