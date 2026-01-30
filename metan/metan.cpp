@@ -192,9 +192,150 @@
 //}
 
 
-typedef unsigned long long ullong;
-int main()
-{
-	ullong n { 1234 };
-	std::cout << "n: " << n << std::endl;
-}
+//typedef unsigned long long ullong;
+//int main()
+//{
+//	ullong n { 1234 };
+//	std::cout << "n: " << n << std::endl;
+//}
+
+
+//+
+//int main()
+//{
+//	int a{ 10 };
+//	int b{ 7 };
+//	int c{ a + b };
+//	int d{ 4 + c };
+//	std::cout << "a=" << a << std::endl;
+//	std::cout << "b=" << b << std::endl;
+//	std::cout << "c=" << c << std::endl;
+//	std::cout << "d=" << d << std::endl;
+//}
+
+
+//-
+//int main()
+//{
+//	int a{ 10 };
+//	int b{ 7 };
+//	int c{ a - b };
+//	int d{ 4 - b };
+//	std::cout << "a=" << a << std::endl;
+//	std::cout << "b=" << b << std::endl;
+//	std::cout << "c=" << c << std::endl;
+//	std::cout << "d=" << d << std::endl;
+//}
+
+
+//*
+//int main()
+//{
+//	int a{ 10 };
+//	int b{ 7 };
+//	int c{ a * b };
+//	int d{ 4 * b };
+//	std::cout << "a=" << a << std::endl;
+//	std::cout << "b=" << b << std::endl;
+//	std::cout << "c=" << c << std::endl;
+//	std::cout << "d=" << d << std::endl;
+//}
+
+///
+//int main()
+//{
+//	int a{ 26 };
+//	int b{ 5 };
+//	int c{ a / b };
+//	int d{ 4 / b };
+//	std::cout << "a=" << a << std::endl;
+//	std::cout << "b=" << b << std::endl;
+//	std::cout << "c=" << c << std::endl;
+//	std::cout << "d=" << d << std::endl;
+//}
+
+
+
+//int main()
+//{
+//	int a{ 26 };
+//	int b{ 5 };
+//	float c{ a / b };      // c = 5
+//	double d{ 4 / b };     // d = 0
+//	std::cout << "c = " << c << std::endl;
+//	std::cout << "d = " << d << std::endl;
+//}
+
+
+//int main()
+//{
+//	float a{ 26 };
+//	int b{ 5 };
+//	float c{ a / b };
+//	double d{ 4.0 / b };
+//	std::cout << "c=" << c << std::endl;
+//	std::cout << "d=" << d << std::endl;
+//}
+
+
+//int main()
+//{
+//	int a{ 26 };
+//	int b{ 5 };
+//	int c{ a % b };
+//	int d{ 4 % b };
+//	std::cout << "c=" << c << std::endl;
+//	std::cout << "d=" << d << std::endl;
+//}
+
+//int main()
+//{
+//	float num1{ 1.23E-4 };
+//	float num2{ 3.65E+6 };
+//	float sum{ num1 + num2 };
+//	std::cout << "sum = " << sum << std::endl;
+//}
+
+//int main()
+//{
+//    double a{ 1.5 }, b{}, c{}, d {-1.5};
+//    double result { a / b };
+//    std::cout << a << "/" << b << " = " << result << std::endl;
+//    result = d / c;
+//    std::cout << d << "/" << c << " = " << result << std::endl;
+//    result = b / c;
+//    std::cout << b << "/" << c << " = " << result << std::endl;
+//    std::cout << result << " + " << a << " = " << result + a << std::endl;
+//}
+
+//int main()
+//{
+//	int a{ 8 };
+//	//int b{ ++a };
+//	//int b{ a++ };
+//	//int b{ --a };
+//	int b{ a-- };
+//	std::cout << "a = " << a << std::endl;
+//	std::cout << "b = " << b << std::endl;
+//}
+
+
+//int main()
+//{
+//	int a{ 8 };
+//	int b{ 7 };
+//	int c = a + 5 * ++b;
+//	std::cout << "c = " << c << std::endl;
+//
+//	int count{ 1 };
+//	int res = ++count * 3 + count++ * 5;
+//	std::cout << "res = " << res << std::endl;
+//}
+
+//int main()
+//{
+//	int a{ 13 };
+//	int b{ 5 };
+//	int c = (a + 5) * ++b;
+//	std::cout << "c = " << c << std::endl;
+//}
