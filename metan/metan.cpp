@@ -339,3 +339,104 @@
 //	int c = (a + 5) * ++b;
 //	std::cout << "c = " << c << std::endl;
 //}
+
+//int main()
+//{
+//	//unsigned int age{ 25 };
+//	unsigned int age{ -25 };
+//	std::cout << "age: " << age << std::endl;
+//}
+
+
+//int main()
+//{
+//	bool a = 1;
+//	bool b = 0;
+//	bool c = 'g';
+//	bool d = 3.14;
+//	int e = true;
+//	double f = false;
+//	int g = 3.4;
+//	int h = 3.6;
+//	float i = 35005;
+//	double j = 3500500000533;
+//	unsigned char k = -5;
+//	unsigned short l = -3500;
+//	unsigned int m = -500000;
+//	std::cout << "a = " << a << std::endl;
+//	std::cout << "b = " << b << std::endl;
+//	std::cout << "c = " << c << std::endl;
+//	std::cout << "d = " << d << std::endl;
+//	std::cout << "e = " << e << std::endl;
+//	std::cout << "f = " << f << std::endl;
+//	std::cout << "g = " << g << std::endl;
+//	std::cout << "h = " << h << std::endl;
+//	std::cout << "i = " << i << std::endl;
+//	std::cout << "j = " << j << std::endl;
+//	std::cout << "k = " << k << std::endl;
+//	std::cout << "l = " << l << std::endl;
+//	std::cout << "m = " << m << std::endl;
+//}
+
+
+//int main()
+//{
+//	double sum{ 100.2 };
+//	int hours{ 8 };
+//	double revenuePerHour{ sum / hours };
+//	std::cout << "Revenue Per Hour " << revenuePerHour << std::endl;
+//}
+
+
+//int main()
+//{
+//	int n{ 5 };
+//	unsigned int x{ 8 };
+//	std::cout << "result = " << x - n << std::endl;
+//}
+
+
+//Опасные и безопасные преобразования
+//bool -> char -> short -> int -> double -> long double
+//
+//bool -> char -> short -> int -> long -> long long
+//
+//unsigned char -> unsigned short -> unsigned int -> unsigned long
+//
+//float -> double -> long double
+
+
+//int main()
+//{
+//	short a = 'g';
+//	int b = 10;
+//	double c = b;
+//	float d = 3.4;
+//	double e = d;
+//	double f = 35;
+//	std::cout << "a = " << a << std::endl;
+//	std::cout << "b = " << b << std::endl;
+//	std::cout << "c = " << c << std::endl;
+//	std::cout << "d = " << d << std::endl;
+//	std::cout << "e = " << e << std::endl;
+//	std::cout << "f = " << f << std::endl;
+//
+//	//опасные преобразования
+//	unsigned int g = -25;
+//	unsigned short h = -2500;
+//	unsigned int i{ -25 };
+//	unsigned short j{ -2500 };
+//	std::cout << "g = " << g << std::endl;
+//	std::cout << "h = " << h << std::endl;
+//	std::cout << "i = " << i << std::endl;
+//	std::cout << "j = " << j << std::endl;
+//}
+
+
+//int main()
+//{
+//	double sum{ 100.2 };
+//	unsigned int hours{ 8 };
+//	unsigned int revenuePerHour{ static_cast<unsigned int>(sum / hours) };
+//	std::cout << "Revenue Per Hour " << revenuePerHour << std::endl;
+//}
