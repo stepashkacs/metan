@@ -471,3 +471,22 @@
 //	std::cout << "c1 = " << c1 << std::endl;
 //	std::cout << "d1 = " << d1 << std::endl;
 //}
+
+
+//int main()
+//{
+//	int a{ 5 };
+//	std::cout << "a = " << a << std::endl;
+//	a += 10;
+//	std::cout << "a = " << a << std::endl;
+//	a -= 3;
+//	std::cout << "a = " << a << std::endl;
+//	a *= 2;
+//	std::cout << "a = " << a << std::endl;
+//	a /= 4;
+//	std::cout << "a = " << a << std::endl;
+//	a <<= 4;
+//	std::cout << "a = " << a << std::endl;
+//	a >>= 2;
+//	std::cout << "a = " << a << std::endl;
+//}
