@@ -440,3 +440,34 @@
 //	unsigned int revenuePerHour{ static_cast<unsigned int>(sum / hours) };
 //	std::cout << "Revenue Per Hour " << revenuePerHour << std::endl;
 //}
+
+
+int main()
+{
+	unsigned int number{ 0b0000'1100 };
+	std::cout << "number = " << number << std::endl;
+	//Операции сдвига
+	unsigned int a = 2 << 2; //8
+	unsigned int b = 16 >> 3; //2
+	std::cout << "a = " << a << std::endl;
+	std::cout << "b = " << b << std::endl;
+
+	unsigned int x{ 3 };
+	unsigned int num{ 7 };
+	unsigned int result1{ num << x };
+	std::cout << "Result = " << result1 << std::endl;
+	num = 26;
+	result1 = num >> x;
+	std::cout << "Result = " << result1 << std::endl;
+
+	//Поразрядные операции
+	int a1 = 5 | 2;
+	int b1 = 6 & 2;
+	int c1 = 5 ^ 2;
+	int d1 = ~9;
+	
+	std::cout << "a1 = " << a1 << std::endl;
+	std::cout << "b1 = " << b1 << std::endl;
+	std::cout << "c1 = " << c1 << std::endl;
+	std::cout << "d1 = " << d1 << std::endl;
+}
