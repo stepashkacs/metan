@@ -573,3 +573,187 @@
 //	std::cout << "res1 " << std::boolalpha << res1 << std::endl;
 //	std::cout << "res2 " << std::boolalpha << res2 << std::endl;
 //}
+
+
+//int main()
+//{
+//	int a{ 8 };
+//	if (a == 8)
+//	{
+//		std::cout << "a == 8" << std::endl;
+//	}
+//	std::cout << "End of program" << std::endl;
+//}
+
+//int main()
+//{
+//	int a{ 8 };
+//	if (a == 7)
+//	{
+//		std::cout << "a == 8" << std::endl;
+//	}
+//	std::cout << "End of program" << std::endl;
+//}
+
+//int main()
+//{
+//	int n{ 23 };
+//	if (n > 22)
+//	{
+//		std::cout << "n > 22" << std::endl;
+//	}
+//	else
+//	{
+//		std::cout << "n <= 22" << std::endl;
+//	}
+//}
+
+
+//int main()
+//{
+//	int n{ 22 };
+//	if (n > 22)
+//	{
+//		std::cout << "n > 22" << std::endl;
+//	}
+//	else if (n < 22)
+//	{
+//		std::cout << "n < 22" << std::endl;
+//	}
+//	else
+//	{
+//		std::cout << "n == 22" << std::endl;
+//	}
+//
+//}
+
+
+//int main()
+//{
+//	int n{ 20 };
+//	if (n == 20)
+//	{
+//		std::cout << "n == 20" << std::endl;
+//	}
+//	if (n == 21)
+//	{
+//		std::cout << "n == 21" << std::endl;
+//	}
+//	if (n == 22)
+//	{
+//		std::cout << "n == 22" << std::endl;
+//	}
+//	if (n == 23)
+//	{
+//		std::cout << "n == 23" << std::endl;
+//	}
+//}
+
+
+//int main()
+//{
+//	int a{ 8 };
+//	if (a)
+//	{
+//		std::cout << "a is true" << std::endl;
+//	}
+//	else
+//	{
+//		std::cout << "a is false" << std::endl;
+//	}
+//
+//	int b {};
+//	if (b)
+//	{
+//		std::cout << "b is true" << std::endl;
+//	}
+//	else
+//	{
+//		std::cout << "b is false" << std::endl;
+//	}
+//}
+
+
+//int main()
+//{
+//	int a{ 5 };
+//	int b{ 6 };
+//	if (a == 5)
+//	{
+//		if (b == 8)
+//		{
+//			std::cout << "a == 5 and b == 8" << std::endl;
+//		}
+//		else
+//		{
+//			std::cout << "a == 5 and b != 8" << std::endl;
+//		}
+//	}
+//	else
+//	{
+//		std::cout << "a != 5" << std::endl;
+//	}
+//}
+
+
+//int main()
+//{
+//	int a{ 2 };
+//	int b{ 3 };
+//	if(int c{ a - b }; a > b)
+//	{
+//		std::cout << "a = " << a << "; c = " << c << std::endl;
+//	}
+//	else
+//	{
+//		std::cout << "b = " << b << "; c = " << c << std::endl;
+//	}
+//}
+
+
+//int main()
+//{
+//	int a{ 6 };
+//	int b{ 3 };
+//	if (int rem{ a % b }; rem == 0)
+//	{
+//		std::cout << "a divisible by b" << std::endl;
+//	}
+//	else
+//	{
+//		std::cout << "remaining of a/b = " << rem << std::endl;
+//	}
+//}
+
+
+//int main()
+//{
+//	int a{ 5 };
+//	int b{ 8 };
+//	int c{};
+//	if (a > b)
+//	{
+//		c = a - b;
+//	}
+//	else
+//	{
+//		c = a + b;
+//	}
+//	std::cout << "c = " << c << std::endl;
+//}
+
+
+//int main()
+//{
+//	int a{ 5 };
+//	int b{8};
+//	a > b ? std::cout << a - b : std::cout << a + b;
+//}
+
+//int main()
+//{
+//	int a{ 8 };
+//	int b{5};
+//	std :: cout << (a < b ? "a is less than b":
+//		(a == b ? "a is equal to b ": "a is grater than b"));
+//}
