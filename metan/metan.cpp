@@ -490,3 +490,86 @@
 //	a >>= 2;
 //	std::cout << "a = " << a << std::endl;
 //}
+
+
+//int main()
+//{
+//	int a{ 10 };
+//	int b{ 4 };
+//	bool c{ a == b };
+//	bool d{ a == 10 };
+//	bool e{ a > b };
+//	bool f{ a < b };
+//	bool g{ a <= b };
+//	bool h{ a <= 14 };
+//	bool i{ a >= b };
+//	bool j{ a >= 14 };
+//	bool k{ a != 14 };
+//	bool l{ b != 4 };
+//	std::cout << "c = " << c << std::endl;
+//	std::cout << "d = " << d << std::endl;
+//	std::cout << "e = " << e << std::endl;
+//	std::cout << "f = " << f << std::endl;
+//	std::cout << "g = " << g << std::endl;
+//	std::cout << "h = " << h << std::endl;
+//	std::cout << "i = " << i << std::endl;
+//	std::cout << "j = " << j << std::endl;
+//	std::cout << "k = " << k << std::endl;
+//	std::cout << "l = " << l << std::endl;
+//}
+
+
+//int main()
+//{
+//	int a{ 8 };
+//	int b{ 11 };
+//	bool c{ a == b };
+//	bool d{ a != b };
+//	std::cout << "c: " << std::boolalpha << c << std::endl;
+//	std::cout << ": " << std::boolalpha << d << std::endl;
+//}
+
+
+////Логические операции
+//int main()
+//{
+//	//! (операция отрицания)
+//	bool a{ true };
+//	bool b{ false };
+//	bool res1{ !a }; //0
+//	bool res2{ !res1 }; //1
+//	//&& (конъюнкция, логическое умножение)
+//	bool res3{ a && b }; // 0
+//	bool res4{ a && true }; //1
+//	//|| (дизъюнкция, логическое сложение)
+//	bool res5{ a || b }; //1
+//	bool res6{ b || false }; //0
+//	//^ ( XOR или eXclusive OR)
+//	bool res7{ a ^ b }; //1
+//	bool res8{ a ^ true }; //0	
+//	bool res9{ b ^ false }; //0
+//}
+
+
+//int main()
+//{
+//	int a{ 5 };
+//	int b{ 8 };
+//	bool res1 = a == 5 && b > 8; //0
+//	bool res2 = a == 5 || b > 8; //1
+//	bool res3 = a == 5 ^ b > 8; //1
+//	std::cout << "res1 " << std::boolalpha << res1 << std::endl;
+//	std::cout << "res2 " << std::boolalpha << res2 << std::endl;
+//	std::cout << "res3 " << std::boolalpha << res3 << std::endl;
+//}
+
+
+//int main()
+//{
+//	int a{ 5 };
+//	int b{ 8 };
+//	bool res1 = a == 6 && b == 8;
+//	bool res2 = a == 5 || b == 0;
+//	std::cout << "res1 " << std::boolalpha << res1 << std::endl;
+//	std::cout << "res2 " << std::boolalpha << res2 << std::endl;
+//}
