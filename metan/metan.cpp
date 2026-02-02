@@ -1021,3 +1021,47 @@
 //		std::cout << n * n << std::endl;
 //	}
 //}
+
+
+//int main()
+//{
+//	int number{ 5 };
+//	int &refNumber{ number };
+//	std::cout << "number = " << number << std::endl;
+//	refNumber = 20;
+//	std::cout << "refNumber = " << refNumber << std::endl;
+//	std::cout << "number = " << number << std::endl;
+//}
+
+//int main()
+//{
+//	int number{ 5 };
+//	const int &refNumber{ number };
+//	number = 20;
+//	std::cout << "refNumber = " << refNumber << std::endl;
+//}
+
+
+//int main()
+//{
+//	int numbers[]{ 1, 2, 3, 4, 5 };
+//	for (auto &n : numbers)
+//	{
+//		n = n * n;
+//	}
+//	for (auto n : numbers)
+//	{
+//		std::cout << n << "\t";
+//	}
+//}
+
+
+	//int main()
+	//{
+	//	int numbers[]{ 1, 2, 3, 4, 5 };
+	//	for (const auto& n : numbers)
+	//	{
+	//		std::cout << n << "\t";
+	//	}
+	//	std::cout << std::endl;
+	//}
