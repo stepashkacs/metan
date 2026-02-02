@@ -757,3 +757,99 @@
 //	std :: cout << (a < b ? "a is less than b":
 //		(a == b ? "a is equal to b ": "a is grater than b"));
 //}
+
+
+//int main()
+//{
+//	int x{1};
+//
+//	switch (x)
+//	{
+//	case 1:
+//		std::cout << "x = 1" << std::endl;
+//		break;
+//	case 2:
+//		std::cout << "x = 2" << std::endl;
+//		break;
+//	case 3:
+//		std::cout << "x = 3" << std::endl;
+//		break;
+//	default:
+//		std::cout << "x is undefined" << std::endl;
+//		break;
+//	}
+//}
+
+
+//int main()
+//{
+//	int x{ 5 };
+//
+//	switch (x)
+//	{
+//	case 1:
+//	case 2:
+//		std::cout << "x is 1 or 2" << std::endl;
+//		break;
+//	case 3:
+//	case 4:
+//		std::cout << "x is 3 or 4" << std::endl;
+//		break;
+//	case 5:
+//		std::cout << "x is 5" << std::endl;
+//		break;
+//	}
+//}
+
+
+//int main()
+//{
+//	int x{ 3 };
+//
+//	switch (x)
+//	{
+//	case 1:
+//	{
+//		int a{ 10 };
+//		std::cout << "a = " << a << std::endl;
+//		break;
+//	}
+//	case 2:
+//	{
+//		int b{ 20 };
+//		std::cout << "b = " << b << std::endl;
+//		break;
+//	}
+//	default:
+//	{
+//		int c{ 30 };
+//		std::cout << "c = " << c << std::endl;
+//	}
+//	}
+//}
+
+
+//int main()
+//{
+//	char op{ '-' };
+//	int n = 10;
+//
+//	switch (int x{ 2 }; op)
+//	{
+//	case '+':
+//	{
+//		std::cout << "n + x = " << n + x << std::endl;
+//		break;
+//	}
+//	case '-':
+//	{
+//		std::cout << "n - x = " << n - x << std::endl;
+//		break;
+//	}
+//	case '*':
+//	{
+//		std::cout << "n * x = " << n * x << std::endl;
+//		break;
+//	}
+//	}
+//}
