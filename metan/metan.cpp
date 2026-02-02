@@ -853,3 +853,171 @@
 //	}
 //	}
 //}
+
+
+//int main()
+//{
+//	int i{ 1 };
+//	while (i < 10)
+//	{
+//		std::cout << i << " * " << i << " = " << i*i << std::endl;
+//		i++;
+//	}
+//}
+
+
+//int main()
+//{
+//	int i{};
+//	while (++i < 10)
+//	{
+//		std::cout << i << " * " << i << " = " << i * i << std::endl;
+//	}
+//}
+
+//int main()
+//{
+//	int sum{};
+//	for (unsigned i{}; i < 6; sum += i++);
+//	std::cout << "Sum: " << sum << std::endl;
+//}
+
+
+//int main()
+//{
+//	int sum{};
+//	for (int i{ 1 }, j{ 5 }; i < 6 && j < 10; i++, j++)
+//	{
+//		std::cout << i << " * " << j << " = " << i * j << std::endl;
+//	}
+//}
+
+
+//int main()
+//{
+//	for (int n : {2, 3, 4, 5})
+//	{
+//		std::cout << "n = " << n << std::endl;
+//	
+// }
+//}
+
+
+//int main()
+//{
+//	for (char n : "hello")
+//	{
+//		std::cout << "n = " << n << std::endl;
+//	}
+//}
+
+//int main()
+//{
+//	int i{ 6 };
+//	do
+//	{
+//		std::cout << "i = " << i << std::endl;
+//		i--;
+//	} 
+//	while (i > 0);
+//}
+
+
+//int main()
+//{
+//	int i{ -1 };
+//	do
+//	{
+//		std::cout << "i = " << i << std::endl;
+//		i--;
+//	} while (i > 0);
+//}
+
+
+//int main()
+//{
+//	char reply{};
+//	int count{};
+//	double number{};
+//	double total{};
+//	do
+//	{
+//		std::cout << "Enter a number: ";
+//		std::cin >> number;
+//		total += number;
+//		++count;
+//		std::cout << "Finish? (y/n): ";
+//		std::cin >> reply;
+//	} while (reply != 'y' && reply != 'Y');
+//
+//	std::cout << "The average value is " << total / count << std::endl;
+//}
+
+
+//int main()
+//{
+//	for (int i{ 1 }; i <= 10; i++)
+//	{
+//		for (int j{ 1 }; j <= 10; j++)
+//		{
+//			std::cout << i * j << "\t";
+//		}
+//		std::cout << std::endl;
+//	}
+//}
+
+//int main()
+//{
+//	int result{};
+//	for (int i{ 1 }; i < 10; i++)
+//	{
+//		result += i;
+//		std::cout << "result = " << result << std::endl;
+//		if (result > 20) break;
+//	}
+//}
+
+
+//int main()
+//{
+//	int result{};
+//	for (int i{ 1 }; i < 10; i++)
+//	{
+//		if (i % 2 == 0) continue;
+//		result += i;
+//	}
+//	std::cout << "result = " << result << std::endl;
+//}
+
+
+//int main()
+//{
+//	// бесконечный цикл for - условие завершения отсутствует
+//	for (;;)
+//	{
+//
+//	}
+//	// бесконечный цикл while - условие всегда равно true
+//	while (true)
+//	{
+//
+//	}
+//	// бесконечный цикл do-while - условие всегда равно true
+//	do
+//	{
+//
+//	} while (true);
+//}
+
+
+//int main()
+//{
+//	int n{};
+//	while (true)
+//	{
+//		std::cout << "Enter a number: ";
+//		std::cin >> n;
+//		if (n == 0) break;
+//		std::cout << n * n << std::endl;
+//	}
+//}
