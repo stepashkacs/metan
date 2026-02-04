@@ -1065,3 +1065,122 @@
 	//	}
 	//	std::cout << std::endl;
 	//}
+
+//using namespace std;
+//
+//int main()
+//{
+//	const int n = 4;
+//	int list1[n];
+//	int list2[n]{};
+//	int list3[n]{1, 2, 3, 4};
+//	int list4[n]{1, 2};
+//	int list5[]{ 1, 2, 3, 4, 5, 6 };
+//}
+
+
+//int main()
+//{
+//	int numbers[]{ 1, 2, 3, 4 };
+//	int first = numbers[0];
+//	std::cout << "First number of list: " << first << std::endl;
+//	numbers[0] = 34;
+//	std::cout << "First number of list: " << numbers[0] << std::endl;
+//}
+
+
+//int main()
+//{
+//	const int numbers[4]{ 1, 2, 3, 4 };
+//	int forth = numbers[4]; // !Ошибка - в массиве только 4 элемента
+//	numbers[1] = 25; // numbers[1] = 23;    // ошибка - значения элементов массива изменить нельзя
+//}
+
+//int main()
+//{
+//	int numbers[]{ 11, 12, 13, 14, 15 };
+//	std::cout << "Lenght: " << sizeof(numbers) / sizeof(numbers[0]) << std::endl;
+//}
+
+
+//int main()
+//{
+//	int numbers[]{ 1, 2, 3, 4 };
+//	int sum{};
+//	for (int i{}; i < std::size(numbers); sum += numbers[i++]);
+//	std::cout << "Sum = " << sum << std::endl;
+//}
+
+
+//int main()
+//{
+//	int numbers[]{ 1, 2, 3, 4 };
+//	for (int n : numbers)
+//	{
+//		std::cout << "n = " << n << std::endl;
+//	}
+//}
+
+
+//int main()
+//{
+//	int numbers[]{ 1, 2, 3, 4 };
+//	for (auto n : numbers)
+//	{
+//		std::cout << "n = " << n << std::endl;
+//	}
+//}
+
+
+//int main()
+//{
+//	int nums[3][2]
+//	{
+//		{1, 2},
+//		{3, 4},
+//		{5, 6}
+//	};
+//	int n = nums[1][0];
+//	std::cout << "n = " << n << std::endl;
+//	
+//	std::cout << "nums[0][1] = " << nums[0][1] << std::endl;
+//	nums[0][1] = 123;
+//	std::cout << "nums[0][1] = " << nums[0][1] << std::endl;
+//}
+
+
+//int main()
+//{
+//	const int rows = 3, columns = 2;
+//	int numbers[rows][columns]
+//	{
+//		{1, 2}, {3, 4}, {5, 6}
+//	};
+//	for (int i = 0; i < rows; i++)
+//	{
+//		for (int j = 0; j < columns; j++)
+//		{
+//			std::cout << numbers[i][j] << "\t";
+//		}
+//		std::cout << std::endl;
+//	}
+//}
+
+
+//int main()
+//{
+//	const int rows = 3, columns = 2;
+//	int numbers[rows][columns]
+//	{
+//		{1, 2}, {3, 4}, {5, 6}
+//	};
+//
+//	for (auto &subnumbers : numbers)
+//	{
+//		for (int number : subnumbers)
+//		{
+//			std::cout << number << "\t";
+//		}
+//		std::cout << std::endl;
+//	}
+//}
