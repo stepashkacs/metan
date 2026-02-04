@@ -1184,3 +1184,64 @@
 //		std::cout << std::endl;
 //	}
 //}
+
+
+//int main()
+//{
+//	char hello1[]{ 'h', 'e', 'l', 'l', 'o' };
+//	char hello2[]{ 'h', 'e', 'l', 'l', 'o', '\0'};
+//	char hello3[]{ "hello" };
+//
+//	std::cout << hello1 << std::endl;
+//	std::cout << hello2 << std::endl;
+//	std::cout << hello3 << std::endl;
+//}
+
+
+//int main()
+//{
+//	const int max_lenght{ 50 };
+//	char langs[][max_lenght]
+//	{
+//		"C++", "C#", "Python", "Java",
+//		"Kotlin", "Go", "Dart", "PHP"
+//	};
+//	std::cout << langs[0] << std::endl;
+//	std::cout << langs[1] << std::endl;
+//	std::cout << langs[2] << std::endl;
+//	std::cout << "langs[20] = " << langs[20] << std::endl;
+//}
+
+
+//int main()
+//{
+//	char langs[][20]
+//	{
+//		"C++", "Python", "JavaScript"
+//	};
+//	for (auto lang : langs)
+//	{
+//		std::cout << lang << "\t";
+//	}
+//	std::cout << std::endl;
+//}
+
+
+//int main()
+//{
+//	const int max_lenghht{ 100 };
+//	char text[max_lenghht]{};
+//	std::cout << "Enter some text: " << std::endl;
+//	std::cin.getline(text, max_lenghht);
+//	std::cout << "You entered : \t" << text << std::endl;
+//}
+
+
+//int main()
+//{
+//	const int max_lenght{ 100 };
+//	char text[max_lenght]{};
+//	std::cout << "Enter some text: ";
+//	std::cin.getline(text, max_lenght, '!');
+//	std::cout << "You entered: \n" << text << std::endl;
+//}
