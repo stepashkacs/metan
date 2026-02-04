@@ -1245,3 +1245,48 @@
 //	std::cin.getline(text, max_lenght, '!');
 //	std::cout << "You entered: \n" << text << std::endl;
 //}
+
+#include <string>
+
+//int main()
+//{
+//	std::string message{ "Hello ma frend" };
+//	std::cout << "Message: " << message << std::endl;
+//	std::cout << "message[0] = " << message[0] << std::endl;
+//	message[0] = 'M';
+//	std::cout << "message[0] = " << message[0] << std::endl;
+//	std::cout << "Message: " << message << std::endl;
+//}
+
+
+//int main()
+//{
+//	unsigned count{};
+//	std::string message{ "Hello ma frend" };
+//	for (const char c : message)
+//	{
+//		if (c == 'l')
+//		{
+//			count++;
+//		}
+//	}
+//	std::cout << "count: " << count << std::endl;
+//}
+
+
+//int main()
+//{
+//	std::string name;
+//	std::cout << "Enter your name: ";
+//	std::cin >> name;
+//	std::cout << "Hello ma frend " << name << std::endl;
+//}
+
+
+//int main()
+//{
+//	std::string name;
+//	std::cout << "Enter your name: ";
+//	getline(std::cin, name);
+//	std::cout << "hello ma frend " << name << std::endl;
+//}
