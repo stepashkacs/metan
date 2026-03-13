@@ -1,4 +1,9 @@
 #include <iostream>
+#include <cctype>
+#include <string>
+using namespace std;
+
+
 
 //int main()
 //{
@@ -1290,3 +1295,49 @@
 //	getline(std::cin, name);
 //	std::cout << "hello ma frend " << name << std::endl;
 //}
+
+
+//Указатели
+
+//int main()
+//{
+//	int* p{ nullptr };
+//	cout << p;
+//}
+
+//int main()
+//{
+//	int* print{};
+//	double *pdouble{};
+//	cout << "pint size: " << sizeof(print) << endl;
+//	cout << "pdouble size: " << sizeof(pdouble) << endl;
+//}
+
+
+//int main()
+//{
+//	int number{ 25 };
+//	int* pnumber{ &number };
+//	cout << "number address: " << pnumber << endl;
+//	cout << "number address: " << &pnumber << endl;
+//	cout << "Adress: " << pnumber << endl;
+//	cout << "Value: " << *pnumber << endl;
+//}
+
+
+//int main()
+//{
+//	int n1{ 25 };
+//	int* pn1{ &n1 };
+//	int n2{ *pn1 };
+//	cout << "n2: " << n2;
+//}
+
+
+int main()
+{
+	int x = 10;
+	int* px = &x;
+	*px = 45;
+	cout << x;
+}
