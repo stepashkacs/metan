@@ -1432,14 +1432,72 @@ using namespace std;
 //}
 
 
-int main()
-{
-	char c{ 'N' };
-	char* pc{ &c };            // указатель на символ
-	int* pd{ (int*)pc };      // указатель на int
-	void* pv{ (void*)pc };     // указатель на void
-	std::cout << "pv=" << pv << std::endl;
-	std::cout << "pd=" << pd << std::endl;
-	std::cout << "pd=" << *pd << std::endl;
-	std::cout << "pc=" << *pc << std::endl;
-}
+//int main()
+//{
+//	char c{ 'N' };
+//	char* pc{ &c };            // указатель на символ
+//	int* pd{ (int*)pc };      // указатель на int
+//	void* pv{ (void*)pc };     // указатель на void
+//	std::cout << "pv=" << pv << std::endl;
+//	std::cout << "pd=" << pd << std::endl;
+//	std::cout << "pd=" << *pd << std::endl;
+//	std::cout << "pc=" << *pc << std::endl;
+//}
+
+
+//int main()
+//{
+//	int n = 10;
+//	int* pn = &n;
+//	cout << "address = " << pn << "\t value = " << *pn << endl;
+//
+//	pn++;
+//
+//	cout << "address = " << pn << "\t value = " << *pn << endl;
+//	
+//	pn--;
+//
+//	cout << "address = " << pn << "\t value = " << *pn << endl;
+//}
+
+
+//int main()
+//{
+//	double d{ 10.6 };
+//	double* pd{ &d };
+//
+//	cout << "Pointer address = " << pd << endl;
+//	pd++;
+//	cout << "Pointer address = " << pd << endl;
+//	pd += 3;
+//	cout << "Pointer address = " << pd << endl;
+//
+//	short n{ 5 };
+//	short* pn{ &n };
+//	cout << "Pointer address = " << pn  << endl;
+//	pn++;
+//	cout << "Pointer address = " << pn  << endl;
+//	pn -= 3;
+//	cout << "Pointer address = " << pn  << endl;
+//
+//}
+
+
+//int main()
+//{
+//	int a{ 10 };
+//	int b{ 23 };
+//
+//	int* pa{ &a };
+//	int* pb{ &b };
+//
+//	auto ab{ pa - pb };
+//
+//	std::cout << "pa: " << pa << std::endl;
+//	std::cout << "pb: " << pb << std::endl;
+//	std::cout << "ab: " << ab << std::endl;
+//
+//	int c = *pa + 20;
+//	std::cout << "c: " << &c << std::endl;
+//
+//}
