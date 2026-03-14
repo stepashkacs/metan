@@ -1334,10 +1334,112 @@ using namespace std;
 //}
 
 
+//int main()
+//{
+//	int x = 10;
+//	int* px = &x;
+//	*px = 45;
+//	cout << x;
+//}
+
+
+//
+//int main()
+//{
+//	int a{ 10 };
+//	int* pa{ &a };
+//
+//	std::cout << "a = " << a << std::endl;
+//	std::cout << "pa = " << pa << std::endl;
+//
+//	*pa = 25;
+//
+//	std::cout << "a = " << a << std::endl;
+//	std::cout << "pa = " << pa << std::endl;
+//}
+
+
+
+
+//int main()
+//{
+//	int a{ 10 };
+//	int b{ 2 };
+//
+//	int* pa{ &a };
+//	int* pb{ &b };
+//
+//	cout << "pa: adress: " << pa << "\t value = " << *pa << endl;
+//	cout << "pb: adress: " << pb << "\t value = " << *pb << endl;
+//
+//	pa = pb;
+//
+//	cout << "pa: adress: " << pa << "\t value = " << *pa << endl;
+//	*pa = 125;
+//	cout << "pa: adress: " << pa << "\t value = " << *pa << endl;
+//	cout << "pb: adress: " << pb << "\t value = " << *pb << endl;
+//
+//}
+
+
+//Нулевые указатели
+//int main()
+//{
+//	int* p1{ nullptr };
+//	int* p2{};
+//}
+
+//int main()
+//{
+//	int a{ 10 };
+//	int b{ 6 };
+//
+//	int* p{};
+//	int*& pRef{ p };
+//	pRef = &a;
+//
+//	cout << "p Value = " << *p << endl;
+//	*pRef = 70;
+//	cout << "a value = " << a << endl;
+//
+//	pRef = &b;
+//	cout << "p Value = " << *p << endl;
+//}
+
+
+//int main()
+//{
+//	int a{ 10 };
+//	int* pa{ &a };
+//	//*pa = 20;
+//	std::cout << "address of pointer=" << &pa << std::endl;        // адрес указателя
+//	std::cout << "address stored in pointer=" << pa << std::endl;  // адрес, который хранится в указателе - адрес переменной a         
+//	std::cout << "value on pointer=" << *pa << std::endl;          // значение по адресу в указателе - значение переменной a
+//}
+
+
+//int main()
+//{
+//	int a{ 10 };
+//	int b{ 20 };
+//	int* pa{ &a };
+//	int* pb{ &b };
+//
+//	if (pa > pb)
+//		std::cout << "pa (" << pa << ") is greater than pb (" << pb << ")" << std::endl;
+//	else
+//		std::cout << "pa (" << pa << ") is less or equal pb (" << pb << ")" << std::endl;
+//}
+
+
 int main()
 {
-	int x = 10;
-	int* px = &x;
-	*px = 45;
-	cout << x;
+	char c{ 'N' };
+	char* pc{ &c };            // указатель на символ
+	int* pd{ (int*)pc };      // указатель на int
+	void* pv{ (void*)pc };     // указатель на void
+	std::cout << "pv=" << pv << std::endl;
+	std::cout << "pd=" << pd << std::endl;
+	std::cout << "pd=" << *pd << std::endl;
+	std::cout << "pc=" << *pc << std::endl;
 }
