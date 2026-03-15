@@ -1682,3 +1682,30 @@ using namespace std;
 //		cout << langs[i] << endl;
 //	}
 //}
+
+
+//void hello()
+//{
+//	cout << "hello" << endl;
+//}
+//
+//
+//int main()
+//{
+//	hello();
+//	hello();
+//}
+
+//
+//void hello();
+//
+//int main()
+//{
+//	hello();
+//	hello();
+//}
+//
+//void hello()
+//{
+//	std::cout << "hello" << std::endl;
+//}
