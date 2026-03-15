@@ -1556,3 +1556,129 @@ using namespace std;
 //	int b{ 45 };
 //	//pa = b; // !Ошибка - нельзя изменить адрес, на который указывает константный указатель
 //}
+
+
+//int main()
+//{
+//	int nums[]{ 1, 2, 3, 4, 5 };
+//	cout << "nums[0] address : " << nums << endl;
+//	cout << "nums[0] value : " << *nums << endl;
+//	cout << "nums objects :  " << sizeof(nums) / sizeof(nums[0]) << endl;
+//	int nums2 = *(nums + 1);
+//	int nums3 = *(nums + 2);
+//	cout << "nums2 = " << nums2 << endl;
+//	cout << "nums3 = " << nums3 << endl;
+//}
+
+
+//int main()
+//{
+//	int nums[]{ 1, 2, 3, 4, 5 };
+//	for (unsigned i{}; i < size(nums); i++)
+//	{
+//		cout << "nums[" << i << "] : address = " << nums + i << "\t value = " << *(nums + i) << endl;
+//	}
+//
+//	//nums++; // !Ошибка - нельзя изменить адрес массива	
+//	int b{ 8 };
+//	//nums = &b; // !Ошибка - нельзя изменить адрес массива
+//}
+
+
+//int main()
+//{
+//	int nums[]{ 1, 2, 3, 4, 5 };
+//	int* ptr{ nums };
+//	int num3 = *(ptr+2);
+//	cout << "num3 = " << num3 << std::endl;
+//
+//	ptr = &(nums[2]);
+//	std::cout << "ptr = " << *ptr << std::endl;
+//}
+
+//int main()
+//{
+//	const int n = 5;
+//	int nums[n]{ 1, 2, 3, 4, 5 };
+//
+//	for (int* ptr{ nums }; ptr <= &nums[n - 1]; ptr++)
+//	{
+//		std::cout << "address = " << ptr << std::endl;
+//	}
+//
+//}
+
+
+//int main()
+//{
+//	int nums[3][4]{
+//		{1, 2, 3, 4},
+//		{5, 6, 7, 8},
+//		{9, 10, 11, 12}
+//	};
+//	unsigned int n{ sizeof(nums) / sizeof(nums[0])};
+//	unsigned int m{ sizeof(nums[0]) / sizeof(nums[0][0])};
+//
+//	int* end{ nums[0] + n * m - 1 };
+//	int* ptr{ nums[0] };
+//	for (unsigned i{ 1 }; ptr <= end; ptr++, i++)
+//	{
+//		cout << ptr << "\t";
+//		if (i % m == 0)
+//		{
+//			cout << endl;
+//		}
+//	}
+//}
+
+
+//int main()
+//{
+//	const unsigned n{ 3 };
+//	const unsigned m{ 4 };
+//	int nums[n][m]{
+//	{1, 2, 3, 4},
+//	{5, 6, 7, 8},
+//	{9, 10, 11, 12}
+//	};
+//	const unsigned count{ n * m };
+//
+//	int* ptr{ nums[0] };
+//	for (unsigned i{ 1 }; i <= count; ptr++, i++)
+//
+//	{
+//		cout << *ptr << "\t";
+//		if (i % m == 0)
+//		{
+//			cout << endl;
+//		}
+//	}
+//}
+
+
+//int main()
+//{
+//	char hello[]{ "hello" };
+//	char* phello{ hello };
+//	cout << *phello << endl;
+//	cout << (void*)phello << endl; //выводит адресс
+//}
+
+
+//int main()
+//{
+//	const char* phello{ "hello" };
+//	cout << phello << endl;
+//}
+
+//
+//int main()
+//{
+//	//char langs[][20]{ "C++", "Python", "JavaScript" 
+//	//cout << langs[0] << ": " << size(langs[0]) << " bytes" << endl;
+//	const char* langs[]{ "C++", "Python", "JavaScript" };
+//	for (unsigned i{}; i < size(langs); i++)
+//	{
+//		cout << langs[i] << endl;
+//	}
+//}
