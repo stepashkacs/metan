@@ -1501,3 +1501,58 @@ using namespace std;
 //	std::cout << "c: " << &c << std::endl;
 //
 //}
+
+
+//int main()
+//{
+//	const int a{ 10 };
+//	const int* pa{ &a };
+//	cout << "address = = " << pa << "\t value = " << *pa << endl;
+//	*pa = 20; // !Ошибка - нельзя изменить значение по адресу, на который указывает константный указатель
+//	cout << "address = = " << pa << "\t value = " << *pa << endl;
+//}
+
+
+//int main()
+//{
+//	int a{ 10 };
+//	const int* pa{ &a };
+//	cout << "address = " << pa << "\t value = " << *pa << endl;
+//	a = 22;
+//	cout << "address = " << pa << "\t value = " << *pa << endl;
+//	//*pa = 22 так нельзя
+//}
+
+
+//int main()
+//{
+//	const int a{ 10 };
+//	const int* pa{ &a };
+//	const int b{ 46 };
+//	pa = &b; // можно изменить адрес, на который указывает константный указатель
+//	cout << "address = " << pa << "\t value = " << *pa << endl;
+//	cout << "address = " << &a << "\t value = " << a << endl;
+//}
+
+//
+//int main()
+//{
+//	int a{ 10 };
+//    int *const pa {&a};
+//	cout << "value = " << *pa << endl;
+//	*pa = 22;
+//	cout << "value = " << *pa << endl;
+//
+//	int b{ 45 };
+////	pa = &b; // !Ошибка - нельзя изменить адрес, на который указывает константный указатель
+//}
+
+
+//int main()
+//{
+//	int a{ 10 };
+//	const int *const pa{ &a };
+//	//*pa = 22; // !Ошибка - нельзя изменить значение по адресу, на который указывает константный указатель
+//	int b{ 45 };
+//	//pa = b; // !Ошибка - нельзя изменить адрес, на который указывает константный указатель
+//}
