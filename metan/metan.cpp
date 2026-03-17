@@ -2001,3 +2001,62 @@ using namespace std;
 //{
 //	cout << n << endl;
 //}
+
+//void square(int);
+//
+//int main()
+//{
+//	int number{ 4 };
+//	square(number);
+//}
+//
+//void square(const int n)
+//{
+//	//n = n * n //такой код не скомпилируется, так как n объявлена как константная переменная, и ее значение нельзя изменить
+//	cout << "In square: n = " << n * n << endl;
+//}
+
+
+//void square(int, int);
+//
+//int main()
+//{
+//	const int n = 4;
+//	const int m = 5;
+//	square(n, m);
+//}
+//
+//void square(int a, int b)
+//{
+//	a = a * a;
+//	b = b * b;
+//	cout << "In square a * b = " << a * b << endl;
+//}
+
+//void square(const int&);
+//
+//int main()
+//{
+//	int number = 5;
+//	square(number);
+//}
+//
+//void square(const int& n)
+//{
+//	//n = n * n; //такой код не скомпилируется, так как n объявлена как константная ссылка, и ее значение нельзя изменить
+//	cout << "In square: n * n = " << n * n << endl;
+//}
+
+//void square(const int&);
+//
+//int main()
+//{
+//	const int n = 6;
+//	square(n);
+//}
+//
+//void square(const int& n)
+//{
+//	//n = n * n; //такой код не скомпилируется, так как n объявлена как константная ссылка, и ее значение нельзя изменить
+//	cout << "n * n = " << n * n << endl;
+//}
