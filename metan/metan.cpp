@@ -2105,20 +2105,90 @@ using namespace std;
 
 
 
-void print(string, unsigned);
+//void print(string, unsigned);
+//
+//int main()
+//{
+//	print("Sam", 21);
+//	print("Bob", 19);
+//}
+//
+//void print(string name, unsigned age)
+//{
+//	if (age > 120)
+//	{
+//		cout << "Incorect Age" << endl;
+//		return;
+//	}
+//	cout << "Name: " << name << "\t Age: " << age << endl;
+//}
 
-int main()
-{
-	print("Sam", 21);
-	print("Bob", 19);
-}
 
-void print(string name, unsigned age)
-{
-	if (age > 120)
-	{
-		cout << "Incorect Age" << endl;
-		return;
-	}
-	cout << "Name: " << name << "\t Age: " << age << endl;
-}
+//void increment(int);
+//
+//int main()
+//{
+//	int n{ 10 };
+//	increment(n);
+//	cout << "main function: " << n << endl;
+//}
+//
+//void increment(int x)
+//{
+//	x++;
+//	cout << "Increment function: " << x << endl;
+//}
+
+
+//void increment(int*);
+//
+//int main()
+//{
+//	int n{ 10 };
+//	increment(&n);
+//	cout << "main function: " << n << endl;
+//}
+//
+//void increment(int *x)
+//{
+//	(*x)++;
+//	cout << "Increment function: " << *x << endl;
+//}
+
+
+//void increment(int*);
+//
+//int main()
+//{
+//	int n{ 10 };
+//	int* ptr{ &n };
+//	increment(ptr);
+//	cout << "main function: " << *ptr << endl;
+//}
+//
+//void increment(int* x)
+//{
+//	int z{ 6 };
+//	x = &z;
+//	cout << "Increment function: " << *x << endl;
+//}
+
+
+//void print(const int*);
+//
+//int main()
+//{
+//	int n{ 10 };
+//	print(&n);
+//
+//}
+//
+//void print(const int* x)
+//{
+//	//(*x)++; //такой код не скомпилируется, так как x - указатель на константный int, и мы не можем изменить значение, на которое он указывает
+//	//cout << "Value: " << *x << endl;
+//	int z{ 2 };
+//	//x = &z;
+//	cout << z << std::endl;   // 2
+//	cout << *x << std::endl;   // 2
+//}
