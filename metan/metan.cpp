@@ -2060,3 +2060,65 @@ using namespace std;
 //	//n = n * n; //такой код не скомпилируетс€, так как n объ€влена как константна€ ссылка, и ее значение нельз€ изменить
 //	cout << "n * n = " << n * n << endl;
 //}
+
+//int sum(int, int);
+//
+//int main()
+//{
+//	int result = sum(3, 6);
+//	cout << result << endl;
+//	cout << sum(10, 20) << endl;
+//	cout << sum(6, 13) << endl;
+//}
+//
+//int sum(int n, int m)
+//{
+//	int result = n + m;
+//	return result;
+//}
+
+
+//int calculate(int, int, char);
+//
+//int main()
+//{
+//	cout << calculate(10, 5, '+') << endl;
+//	cout << calculate(10, 5, '-') << endl;
+//	cout << calculate(10, 5, '*') << endl;
+//	cout << calculate(10, 5, '/') << endl;
+//}
+//
+//int calculate(int a, int  b, char op)
+//{
+//	switch (op)
+//	{
+//		case '+':
+//			return a + b;
+//		case '-':
+//			return a - b;
+//		case '*':
+//			return a * b;
+//		default:
+//			return 0;
+//	}
+//}
+
+
+
+void print(string, unsigned);
+
+int main()
+{
+	print("Sam", 21);
+	print("Bob", 19);
+}
+
+void print(string name, unsigned age)
+{
+	if (age > 120)
+	{
+		cout << "Incorect Age" << endl;
+		return;
+	}
+	cout << "Name: " << name << "\t Age: " << age << endl;
+}
