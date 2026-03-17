@@ -1909,21 +1909,95 @@ using namespace std;
 //}
 
 
-void sum(auto, auto);
+//void sum(auto, auto);
+//
+//int main()
+//{
+//	const int n1{ 4 };
+//	const int n2{ 5 };
+//	sum(n1, n2);
+//
+//	const double d1{ 3.5 };
+//	const double d2{ 4.1 };
+//	sum(d1, d2);
+//}
+//
+//void sum(auto a, auto b)
+//{
+//	auto result = a + b;
+//	cout << a << " + " << b << " = " << result << endl;
+//}	
 
-int main()
-{
-	const int n1{ 4 };
-	const int n2{ 5 };
-	sum(n1, n2);
 
-	const double d1{ 3.5 };
-	const double d2{ 4.1 };
-	sum(d1, d2);
-}
 
-void sum(auto a, auto b)
-{
-	auto result = a + b;
-	cout << a << " + " << b << " = " << result << endl;
-}
+//void square(int);
+//
+//int main()
+//{
+//	int n{ 4 };
+//	cout << "Before square: n = " << n << endl;
+//	square(n);
+//	cout << "After square: n = " << n << endl;
+//}
+//
+//void square(int m)
+//{
+//	m = m * m;
+//	cout << "In square: m = " << m << std::endl;
+//}
+
+
+//void square(int&);
+//
+//int main()
+//{
+//	int n{ 4 };
+//	cout << "Before square: n = " << n << endl;
+//	square(n);
+//	cout << "After square: n = " << n << endl;
+//}
+//
+//void square(int& m)
+//{
+//	m = m * m;
+//	cout << "In square: m = " << m << std::endl;
+//}
+
+
+//void square(int);
+//
+//int main()
+//{
+//	int n{ 4 };
+//	int& nRef{ n };
+//	cout << "Before square: n = " << n << endl;
+//	square(nRef);
+//	cout << "After square: n = " << n << endl;
+//}
+//
+//void square(int m)
+//{
+//	m = m * m;
+//	cout << "In square: m = " << m << std::endl;
+//}
+
+
+//void printVal(int n);
+//void printRef(int& n);
+//
+//int main()
+//{
+//	double value{ 3.14159 };
+//	printVal(value);
+//	//printRef(value); //программа не скомпилируется, так как printRef ожидает ссылку на int, а мы передаем double
+//}
+//
+//void printVal(int n)
+//{
+//	cout << n << endl;
+//}
+//
+//void printRef(int& n)
+//{
+//	cout << n << endl;
+//}
