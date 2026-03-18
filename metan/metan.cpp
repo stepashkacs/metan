@@ -2426,3 +2426,80 @@ using namespace std;
 //		cout << argv[i] << endl;
 //	}
 //}
+
+
+//int* max(int*, int*);
+//
+//int main()
+//{
+//	int n = 5;
+//	int m = 4;
+//	//int* ptr = max(&n, &m);
+//	//cout << "max = " << *ptr << endl;
+//	cout << "max = " << *max(&n, &m) << endl;
+//
+//}
+//
+//int *max(int* a, int* b)
+//{
+//	if (*a > *b)
+//	{
+//		return a;
+//	}
+//	else
+//	{
+//		return b;
+//	}
+//}
+
+
+//int& max(int&, int&);
+//
+//int main()
+//{
+//	int n = 5;
+//	int m = 4;
+//	//int* ptr = max(&n, &m);
+//	//cout << "max = " << *ptr << endl;
+//	int result = max(n, m);
+//	cout << "max = " << result << endl;
+//
+//}
+//
+//int& max(int& a, int& b)
+//{
+//	if (a > b)
+//	{
+//		return a;
+//	}
+//	else
+//	{
+//		return b;
+//	}
+//}
+
+
+//const int& max(const int&, const int&);
+//
+//int main()
+//{
+//	int n = 5;
+//	int m = 4;
+//	//int* ptr = max(&n, &m);
+//	//cout << "max = " << *ptr << endl;
+//	int result = max(n, m);
+//	cout << "max = " << result << endl;
+//
+//}
+//
+//const int& max(const int& a, const int& b)
+//{
+//	if (a > b)
+//	{
+//		return a;
+//	}
+//	else
+//	{
+//		return b;
+//	}
+//}
