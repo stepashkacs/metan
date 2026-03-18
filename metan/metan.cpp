@@ -2192,3 +2192,230 @@ using namespace std;
 //	cout << z << std::endl;   // 2
 //	cout << *x << std::endl;   // 2
 //}
+
+
+//void print(int[]);
+//
+//int main()
+//{
+//	int nums[]{ 1, 2, 3, 4, 5 };
+//	print(nums);
+//}
+//
+//void print(int arr[])
+//{
+//	cout << "First element: " << arr[0] << endl;
+//}
+
+//void print(int*);
+//
+//int main()
+//{
+//	int nums[]{ 1, 2, 3, 4, 5 };
+//	print(nums);
+//}
+//
+//void print(int *arr)
+//{
+//	cout << "First element: " << *arr << endl;
+//}
+
+
+//void print(int[]);
+//
+//int main()
+//{
+//	int nums[]{ 1, 2, 3, 4, 5 };
+//	print(nums);
+//}
+//
+//void print(int arr[])
+//{
+//	//int size = sizeof(arr) / sizeof(arr[0]); //такой код не будет работать, так как arr - это указатель на int, а не массив, и sizeof(arr) вернет размер указателя, а не размер массива);
+//	//cout << size << endl;
+//
+//	//for (int n : arr) 
+//	//{
+//	//	cout << n << endl;
+//	//}
+//}
+
+
+//void print(char[]);
+//
+//int main()
+//{
+//	char chars[]{ "Hello" };
+//	print(chars);
+//}
+//
+//void print(char chars[])
+//{
+//	for (unsigned i{}; chars[i] != '\0'; i++)
+//	{
+//		cout << chars[i] << endl;
+//	}
+//}
+
+
+//void print(int[], size_t);
+//
+//int main()
+//{
+//	int nums[]{ 1, 2, 3, 4, 5 };
+//	size_t n{ size(nums) };
+//	print(nums, n);
+//}
+//
+//void print(int nums[], size_t n)
+//{
+//	for (size_t i{}; i < n; i++)
+//	{
+//		cout << nums[i] << endl;
+//	}
+//}
+
+//void print(int*, int*);
+//
+//int main()
+//{
+//	int nums[]{ 1, 2, 3, 4, 5 };
+//	int *begin{ std::begin(nums) };
+//	int *end{ std::end(nums) };
+//
+//
+//	print(begin, end);
+//}
+//
+//void print(int* begin, int* end)
+//{
+//	for (int* ptr = begin; ptr != end; ptr++)
+//	{
+//		cout << *ptr << endl;
+//	}
+//}
+
+
+//void print(const int*, const size_t);
+//void twice(int*, const size_t);
+//
+//int main()
+//{
+//	int numbers[]{ 1, 2, 3, 4, 5 };
+//	size_t n = size(numbers);
+//	print(numbers, n);
+//	twice(numbers, n); //увеличиваем массив в 2 раза
+//	print(numbers, n);
+//}
+//
+//void print(const int numbers[], const size_t n)
+//{
+//	for (size_t i = 0; i < n; i++)
+//	{
+//		cout << numbers[i] << "\t";
+//	}
+//	cout << endl;
+//}
+//
+//void twice(int* numbers, const size_t n)
+//{
+//	for (size_t i = 0; i < n; i++)
+//	{
+//		numbers[i] *= 2;
+//	}
+//}
+
+
+//void print(int(&)[], size_t);
+//
+//int main()
+//{
+//	int nums[]{ 1, 2, 3, 4, 5 };
+//	size_t count = size(nums);
+//	print(nums, count);
+//}
+//
+//void print(int (&nums)[], size_t n)
+//{
+//	for (size_t i{}; i < n; i++)
+//	{
+//		cout << nums[i] << "\t";
+//	}
+//	cout << endl;
+//}
+
+
+//void print(const int(&)[5]);
+//
+//int main()
+//{
+//	int nums[]{ 1, 2, 3, 4, 5 };
+//	print(nums);
+//}
+//
+//void print(const int(&nums)[5])
+//{
+//	for (unsigned i{}; i < 5; i++)
+//	{
+//		cout << nums[i] << "\t";
+//	}
+//	cout << endl;
+//}
+
+
+//void print(const int(*)[3], const size_t);
+//
+//int main()
+//{
+//	int table[][3]{
+//		{1, 2, 3},
+//		{4, 5, 6},
+//		{7, 8, 9}
+//	};
+//
+//	size_t rowsCount = size(table);
+//	print(table, rowsCount);
+//}
+//
+//void print(const int (*rows)[3], const size_t rowsCount)
+//{
+//	size_t columnsCount = size(*rows);
+//	for (size_t i = 0; i < rowsCount; i++)
+//	{
+//		for (size_t j = 0; j < columnsCount; j++)
+//		{
+//			cout << rows[i][j] << "\t";
+//		}
+//		cout << endl;
+//	}
+//}
+
+
+
+//void print(const int(*)[3], const size_t);
+//
+//int main()
+//{
+//	int table[][3]{
+//		{1, 2, 3},
+//		{4, 5, 6},
+//		{7, 8, 9}
+//	};
+//
+//	size_t rowsCount = size(table);
+//	print(table, rowsCount);
+//}
+//
+//void print(const int (*rows)[3], const size_t rowsCount)
+//{
+//	size_t columnsCount = size(rows[0]);
+//	for (size_t i = 0; i < rowsCount; i++)
+//	{
+//		for (size_t j = 0; j < columnsCount; j++)
+//		{
+//			cout << rows[i][j] << "\t";
+//		}
+//		cout << endl;
+//	}
+//}
+
