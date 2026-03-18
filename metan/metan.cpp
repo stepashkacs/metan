@@ -2503,3 +2503,76 @@ using namespace std;
 //		return b;
 //	}
 //}
+
+//int sum(int, int);
+//double sum(double, double);
+//
+//int main()
+//{
+//	int result1 = sum(3, 6);
+//	cout << result1 << endl;
+//
+//	double result2 = sum(3.5, 4.1);	
+//	cout << result2 << endl;
+//}
+//
+//int sum(int a, int b)
+//{
+//	return a + b;
+//}
+//
+//double sum(double a, double b)
+//{
+//	return a + b;
+//}
+
+
+//int sum(int, int);
+//double sum(int, int, int);
+//
+//int main()
+//{
+//	int result1 = sum(3, 6);
+//	cout << result1 << endl;
+//
+//	int result2 = sum(3, 5, 11);
+//	cout << result2 << endl;
+//}
+//
+//int sum(int a, int b)
+//{
+//	return a + b;
+//}
+//
+//double sum(int a, int b, int c)
+//{
+//	return a + b + c;
+//}
+
+
+//int square(const int*);
+//int square(int*);
+//
+//int main()
+//{
+//	const int n1{ 2 };
+//	int n2{ 3 };
+//
+//	int square_n1{ square(&n1) };
+//	int square_n2{ square(&n2) };
+//
+//	cout << "Square of n1: " << square_n1 << endl;
+//	cout << "Square of n2: " << square_n2 << endl;
+//
+//}
+//
+//int square(const int* n)
+//{
+//	return *n * *n;
+//}
+//
+//int square(int* n)
+//{
+//	*n = *n * *n;
+//	return *n;
+//}
