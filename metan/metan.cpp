@@ -2689,3 +2689,115 @@ using namespace std;
 //}
 
 
+//void hello();
+//void goodbye();
+//
+//int main()
+//{
+//	void (*message)();
+//	message = hello;
+//	message();
+//	message = goodbye;
+//	message();
+//}
+//
+//
+//void hello()
+//{
+//	cout << "Hello!" << endl;
+//}
+//
+//void goodbye()
+//{
+//	cout << "Goodbye!" << endl;
+//}
+
+
+
+//void hello();
+//void goodbye();
+//
+//int main()
+//{
+//	void (*message)() = nullptr;
+//	//auto message = hello;
+//	//auto (*message)() = goodbye;
+//	//auto message{ &hello };
+//	message = hello;
+//	message();
+//	message = goodbye;
+//	message();
+//}
+//
+//
+//void hello()
+//{
+//	cout << "Hello!" << endl;
+//}
+//
+//void goodbye()
+//{
+//	cout << "Goodbye!" << endl;
+//}
+
+
+//int sum(int, int);
+//int substract(int, int);
+//
+//int main()
+//{
+//	int a = 10;
+//	int b = 5;
+//	int (*operation)(int, int) = sum;
+//	int result = operation(a, b);
+//	cout << "result = " << result << endl;
+//
+//
+//	operation = substract;
+//	result = operation(a, b);
+//	cout << "result = " << result << endl;
+//}
+//
+//
+//int sum(int x, int y)
+//{
+//	return x + y;
+//}
+//
+//int substract(int x, int y)
+//{
+//	return x - y;
+//}
+
+
+void add(int, int);
+void subtract(int, int);
+void multiply(int, int);
+
+int main()
+{
+	int a = 10;
+	int b = 5;
+	void (*operations[3])(int, int) = { add, subtract, multiply };
+
+	unsigned lenght = size(operations);
+
+	for (unsigned i = 0; i < lenght; i++)
+	{
+		operations[i](a, b);
+	}
+}
+
+
+void add(int x, int y)
+{
+	std::cout << "x + y = " << x + y << std::endl;
+}
+void subtract(int x, int y)
+{
+	std::cout << "x - y = " << x - y << std::endl;
+}
+void multiply(int x, int y)
+{
+	std::cout << "x * y = " << x * y << std::endl;
+}
