@@ -2576,3 +2576,70 @@ using namespace std;
 //	*n = *n * *n;
 //	return *n;
 //}
+
+//unsigned long long factorial(unsigned n);
+//
+//int main()
+//{
+//	unsigned n{ 5 };
+//	auto result{ factorial(n) };
+//	cout << result << endl;
+//}
+//
+//unsigned long long factorial(unsigned n)
+//{
+//	if (n > 1)
+//	{
+//		return n * factorial(n - 1);
+//	}
+//	return 1;
+//}
+
+
+//unsigned long long fib(unsigned);
+//
+//int main()
+//{
+//	for (unsigned i = 0; i < 10; i++)
+//	{
+//		auto n = fib(i);
+//		cout << n << "\t";
+//	}
+//	cout << endl;
+//}
+//
+//unsigned long long fib(unsigned n)
+//{
+//	if (n == 0)
+//	{
+//		return 0;
+//	}
+//	else if (n == 1)
+//	{
+//		return 1;
+//	}
+//	else
+//	{
+//		return fib(n - 1) + fib(n - 2);
+//	}
+//}
+
+
+//unsigned long long factorial(unsigned);
+//
+//int main()
+//{
+//	unsigned n = 6;
+//	cout << "Factorial of " << n << " is " << factorial(n) << endl;
+//}
+//
+//unsigned long long factorial(unsigned n)
+//{
+//	unsigned long long result = 1;
+//	for (unsigned i = 1; i <= n; i++)
+//	{
+//		result *= i;
+//	}
+//	return result;
+//}
+
