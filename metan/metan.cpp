@@ -2924,3 +2924,106 @@ using namespace std;
 //
 //int sum(int x, int y) { return x + y; }
 //int subtract(int x, int y) { return x - y; }
+
+
+//void goodmorning();
+//void goodevening();
+//void(*message(unsigned))();
+//
+//int main()
+//{
+//	void (*action)() { message(10) };
+//	action();
+//	action = message(16);
+//	action();
+//}
+//
+//void (*message(unsigned hour))()
+//{
+//	if (hour > 15)
+//	{
+//		return goodevening;
+//	}
+//	else return goodmorning;
+//}
+//
+//void goodmorning()
+//{
+//	std::cout << "Good Morning!" << std::endl;
+//}
+//void goodevening()
+//{
+//	std::cout << "Good Evening!" << std::endl;
+//}
+
+
+//int add(int, int);
+//int subtract(int, int);
+//int multiply(int, int);
+//int(*select(int))(int, int);
+//
+//int main()
+//{
+//	int (*action)(int, int) { select(1) };
+//	cout << action(8, 5) << endl;
+//
+//	action = select(2);
+//	cout << action(8, 5) << endl;
+//
+//	action = select(3);
+//	cout << action(8, 5) << endl;
+//
+//}
+//
+//int (*select(int choice))(int, int)
+//{
+//	switch (choice)
+//	{
+//		case 2:
+//			return subtract;
+//		case 3:
+//			return multiply;
+//		default:
+//			return add;
+//	}
+//}
+//
+//int add(int x, int y) { return x + y; }
+//int subtract(int x, int y) { return x - y; }
+//int multiply(int x, int y) { return x * y; }
+
+
+//int add(int, int);
+//int subtract(int, int);
+//int multiply(int, int);
+//int(*select(int))(int, int);
+//
+//int main()
+//{
+//	int (*action)(int, int) { select(2) };
+//	if (action)
+//	{
+//		cout << action(8, 5) << endl;
+//	}
+//	else
+//	{
+//		cout << "Undefined" << endl;
+//	}
+//
+//}
+//
+//int (*select(int choice))(int, int)
+//{
+//	int (*actions[])(int x, int y) = { add, subtract, multiply };
+//
+//	if (choice > 0 && choice <= size(actions))
+//	{
+//		return actions[choice - 1];
+//	}
+//	else return nullptr;
+//}
+//
+//
+//int add(int x, int y) { return x + y; }
+//int subtract(int x, int y) { return x - y; }
+//int multiply(int x, int y) { return x * y; }	
