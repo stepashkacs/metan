@@ -2770,34 +2770,106 @@ using namespace std;
 //}
 
 
-void add(int, int);
-void subtract(int, int);
-void multiply(int, int);
+//void add(int, int);
+//void subtract(int, int);
+//void multiply(int, int);
+//
+//int main()
+//{
+//	int a = 10;
+//	int b = 5;
+//	void (*operations[3])(int, int) = { add, subtract, multiply };
+//
+//	unsigned lenght = size(operations);
+//
+//	for (unsigned i = 0; i < lenght; i++)
+//	{
+//		operations[i](a, b);
+//	}
+//}
+//
+//
+//void add(int x, int y)
+//{
+//	std::cout << "x + y = " << x + y << std::endl;
+//}
+//void subtract(int x, int y)
+//{
+//	std::cout << "x - y = " << x - y << std::endl;
+//}
+//void multiply(int x, int y)
+//{
+//	std::cout << "x * y = " << x * y << std::endl;
+//}
 
-int main()
-{
-	int a = 10;
-	int b = 5;
-	void (*operations[3])(int, int) = { add, subtract, multiply };
 
-	unsigned lenght = size(operations);
+//int add(int, int);
+//int subtract(int, int);
+//int operation(int(*)(int, int), int, int);
+//
+//int main()
+//{
+//	int a = 10;
+//	int b = 6;
+//	int result = operation(add, a, b);
+//	cout << "result = " << result << endl;
+//
+//	result = operation(subtract, a, b);
+//	cout << "result = " << result << endl;
+//}
+//
+//int add(int x, int y)
+//{
+//	return x + y;
+//}
+//
+//int subtract(int x, int y)
+//{
+//	return x - y;
+//}
+//
+//int operation(int(*op)(int, int), int a, int b)
+//{
+//	return op(a, b);
+//}
 
-	for (unsigned i = 0; i < lenght; i++)
-	{
-		operations[i](a, b);
-	}
-}
 
-
-void add(int x, int y)
-{
-	std::cout << "x + y = " << x + y << std::endl;
-}
-void subtract(int x, int y)
-{
-	std::cout << "x - y = " << x - y << std::endl;
-}
-void multiply(int x, int y)
-{
-	std::cout << "x * y = " << x * y << std::endl;
-}
+//bool isEven(int);
+//bool isPositive(int);
+//
+//void action(bool(*)(int), int[], unsigned);
+//
+//
+//int main()
+//{
+//	int numbers[]{ -5, -4, -3, -2, -1, 0, 1, 2, 3, 4, 5 };
+//	const unsigned n = size(numbers);
+//
+//	cout << "Even numbers: " << endl;
+//	action(isEven, numbers, n);
+//
+//	cout << "Positive numbers: " << endl;
+//	action(isPositive, numbers, n);
+//}
+//
+//bool isEven(int x)
+//{
+//	return x % 2 == 0;
+//}
+//
+//bool isPositive(int x)
+//{
+//	return x > 0;
+//}
+//
+//void action(bool(*condition)(int), int numbers[], unsigned n)
+//{
+//	for (unsigned i = 0; i < n; i++)
+//	{
+//		if (condition(numbers[i]))
+//		{
+//			cout << numbers[i] << "\t";
+//		}
+//	}
+//	cout << endl;
+//}
