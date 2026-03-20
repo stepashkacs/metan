@@ -3027,3 +3027,11 @@ using namespace std;
 //int add(int x, int y) { return x + y; }
 //int subtract(int x, int y) { return x - y; }
 //int multiply(int x, int y) { return x * y; }	
+
+
+//#include "sum.h"
+//int main()
+//{
+//	int result{ sum(5, 4) };
+//	std::cout << "result = " << result << std::endl; 
+//}
