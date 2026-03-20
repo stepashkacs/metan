@@ -128,9 +128,11 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="metan.cpp" />
+    <ClCompile Include="objects.cpp" />
     <ClCompile Include="sum.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="objects.h" />
     <ClInclude Include="resource.h" />
     <ClInclude Include="sum.h" />
   </ItemGroup>

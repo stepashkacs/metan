@@ -3035,3 +3035,26 @@ using namespace std;
 //	int result{ sum(5, 4) };
 //	std::cout << "result = " << result << std::endl; 
 //}
+
+
+//extern const string message;
+//extern unsigned times;
+//
+//int main()
+//{
+//	for (unsigned i = 0; i < times; i++)
+//	{
+//		cout << message << endl;
+//	}
+//}
+
+
+//#include "objects.h"
+//
+//int main()
+//{
+//	for (unsigned i = 0; i < times; i++)
+//	{
+//		cout << message << endl;
+//	}
+//}
