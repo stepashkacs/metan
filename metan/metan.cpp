@@ -1,6 +1,7 @@
 #include <iostream>
 #include <cctype>
 #include <string>
+#include <memory>
 using namespace std;
 
 
@@ -3289,4 +3290,69 @@ using namespace std;
 //
 //	delete[] a;
 //	a = nullptr;
+//}
+
+
+//int main()
+//{
+//	unique_ptr<int> ptr{ make_unique<int>(125) };
+//	cout << "Address: " << ptr << endl;
+//	cout << "Initial value: " << *ptr << endl;
+//
+//
+//	*ptr = 24;
+//	cout << "New value: " << *ptr << endl;
+//
+//}
+
+
+//int main()
+//{
+//	unsigned n = 5;
+//	auto pnumbers = make_unique<int[]>(n);
+//
+//	cout << "pnumbers[1] initial value: " << pnumbers[1] << endl; // 0
+//	pnumbers[1] = 121;
+//	cout << "pnumbers[1] initial value: " << pnumbers[1] << endl; // 121
+//}
+
+
+//int main()
+//{
+//	unsigned n{ 5 };   // размер массива
+//	auto pnumbers{ std::make_unique<int[]>(n) };    // массив из n элементов
+//
+//	// изменим и выведем все элементы на консоль
+//	for (unsigned i{}; i < n; i++)
+//	{
+//		pnumbers[i] = i + 1;
+//		std::cout << "pnumbers[" << i << "] = " << pnumbers[i] << std::endl;
+//	}
+//}
+
+
+//int main()
+//{
+//	auto ptr = make_unique<int>(123);
+//	ptr.reset();
+//	if (!ptr)
+//	{
+//		cout << "Memory is free" << endl;
+//	}
+//	else
+//	{
+//		cout << *ptr << endl;
+//	}
+//}
+
+//int main()
+//{
+//	auto ptr = make_unique<int>(123);
+//
+//	cout << "Old Address: " << ptr << endl;
+//	cout << "Old value: " << *ptr << endl;
+//	ptr.reset(new int{ 321 });
+//
+//	cout << "New Address: " << ptr << endl;
+//	cout << "New value: " << *ptr << endl;
 //}
