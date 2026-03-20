@@ -3356,3 +3356,48 @@ using namespace std;
 //	cout << "New Address: " << ptr << endl;
 //	cout << "New value: " << *ptr << endl;
 //}
+
+
+//int main()
+//{
+//	shared_ptr<int> ptr = make_shared<int>(123);
+//
+//	cout << "Address: " << ptr << endl;
+//	cout << "Old Value: " << *ptr << endl;//123
+//	*ptr = 321;
+//	cout << "New Value: " << *ptr << endl;//321
+//
+//}
+
+
+//int main()
+//{
+//	shared_ptr<int> ptr1 = make_shared<int>(123);
+//	shared_ptr<int> ptr2 = { ptr1 };
+//
+//	cout << "ptr1 address: " << ptr1 << endl;
+//	cout << "ptr1 value: " << *ptr1 << endl;
+//	cout << "ptr2 address: " << ptr2 << endl;
+//	cout << "ptr2 value: " << *ptr2 << endl;
+//}
+
+//int main()
+//{
+//	unsigned n = 5;
+//	auto pnumbers = make_shared<int[]>(n);
+//	cout << "pnumbers[1] initial valueL: " << pnumbers[1] << endl;
+//	pnumbers[1] = 121;
+//	cout << "pnumbers[1] initial valueL: " << pnumbers[1] << endl;
+//}
+
+
+//int main()
+//{
+//	unsigned n = 5;
+//	auto pnumbers = make_shared<int[]>(5);
+//	for (unsigned i = 0; i < n; i++)
+//	{
+//		pnumbers[i] = i + 1;
+//		cout << "pnumbers[" << i << "]  = " << pnumbers[i] << endl;
+//	}
+//}
