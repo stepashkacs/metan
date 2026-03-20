@@ -3058,3 +3058,82 @@ using namespace std;
 //		cout << message << endl;
 //	}
 //}
+
+
+//В дополнение к этим типам в C++ можно создавать динамические объекты.Продолжительность их жизни не зависит от того, где они созданы.
+//Динамические объекты существуют, пока не будут удалены явным образом.Динамические объекты размещаются в динамической памяти(free store).
+//Это область памяти, не занятая операционной системой или другими загруженными в данный момент программами.
+
+
+//int main()
+//{
+//	int* ptr{ new int()};
+//	//или
+//	//int* ptr = new int;
+//
+//	cout << *ptr << endl; //0
+//}
+//
+//int main()
+//{
+//	int* ptr{ new int{5} };
+//	// альтернативные варианты
+//	// int *ptr = new int{5};
+//	// int *ptr {new int(5)};
+//	// int *ptr = new int(5);
+//	cout << *ptr << endl; //5
+//}
+
+
+
+//int main()
+//{
+//	int* ptr{ new int{5} }; //5
+//	*ptr = 22;
+//	cout << *ptr << endl; //22
+//}
+
+
+//int main()
+//{
+//	int* ptr{ new int{5} };
+//	cout << *ptr << endl; //5
+//	delete  ptr; //освобождаем память, выделенную для динамического объекта
+//}
+
+
+//int* createPtr(int value)
+//{
+//	int* ptr{ new int{value} };
+//	return ptr;
+//}
+//
+//void usePtr()
+//{
+//	int* obj = createPtr(10);
+//	cout << *obj << endl; //10
+//	delete obj; //освобождаем память, выделенную для динамического объекта
+//}
+//
+//int main()
+//{
+//	usePtr();
+//}
+
+
+//int main()
+//{
+//	int* p1 = new int{ 12 };
+//	int* p2{ new int{5} };
+//
+//	cout << *p1 << endl; //12
+//	cout << *p2 << endl; // 5
+//	delete p1;
+//	p1 = nullptr;
+//	p2 = nullptr;
+//
+//	p1 = new int{ 11 };
+//	cout << *p1 << endl; //11
+//	delete p1;
+//
+//}
