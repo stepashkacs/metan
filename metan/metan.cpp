@@ -2873,3 +2873,54 @@ using namespace std;
 //	}
 //	cout << endl;
 //}
+
+
+
+//int sum(int, int);
+//
+//int main()
+//{
+//	int (*operation)(int, int) { sum };
+//	cout << operation(3, 5) << endl;
+//}
+//
+//int sum(int x, int y) { return x + y; }
+
+
+//using BinaryOp = int(*)(int, int);
+//
+//int sum(int, int);
+//int subtract(int, int);
+//
+//int main()
+//{
+//	BinaryOp operation = sum;
+//	cout << operation(8, 5) << endl;
+//	operation = subtract;
+//	cout << operation(8, 5) << endl;
+//}
+//int sum(int x, int y) { return x + y; }
+//int subtract(int x, int y) { return x - y; }
+
+
+
+//using BinaryOp = int(*)(int, int);
+//int sum(int, int);
+//int subtract(int, int);
+//void do_operation(int, int, BinaryOp);
+//
+//
+//int main()
+//{
+//	do_operation(10, 5, sum);
+//	do_operation(10, 5, subtract);
+//}
+//
+//void do_operation(int a, int b, BinaryOp op)
+//{
+//	double result = op(a, b);
+//	cout << result << endl;
+//}
+//
+//int sum(int x, int y) { return x + y; }
+//int subtract(int x, int y) { return x - y; }
