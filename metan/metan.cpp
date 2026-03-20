@@ -3137,3 +3137,156 @@ using namespace std;
 //	delete p1;
 //
 //}
+
+
+//int* numbers{ new int[5] };
+////или
+////int* numbers = new int[5];
+
+
+//int main()
+//{
+//	int* numbers1{ new int[4] {} };
+//	int* numbers2{ new int[4] {1, 2} };
+//	int* numbers3{ new int[4] {1, 2, 3, 4} };
+//	//int* numbers4 = new int[] {1, 2, 3, 4};
+//	int* numbers4{ new int[] {1, 2, 3, 4} };
+//
+//	//или
+//
+//	//int* numbers1 =  new int[4] {} ;
+//	//int* numbers2=  new int[4] () ;
+//	//int* numbers3 = new int[4] {1, 2} ;
+//	//int* numbers4 = new int[4] {1, 2, 3, 4} ;
+//}
+
+
+//int main()
+//{
+//	int* numbers = new int[] {1, 2, 3, 4, 5};
+//
+//	cout << "First element: " << numbers[0] << endl;
+//	cout << "Second element: " << numbers[1] << endl;
+//
+//	cout << *numbers << endl; //1
+//	cout << *(numbers + 1) << endl; //2
+//}
+
+//int main()
+//{
+//	unsigned n = 5;
+//	int* p = new int[n] {1, 2, 3, 4, 5};
+//
+//	for (unsigned i = 0; i < n; i++)
+//	{
+//		cout << p[i] << "\t";
+//	}
+//	cout << endl;
+//
+//	for (unsigned i = 0; i < n; i++)
+//	{
+//		cout << *(p + i) << "\t";
+//	}
+//	cout << endl;
+//
+//
+//	for (int* q{ p }; q != p + n; q++)
+//	{
+//		cout << *q << "\t";
+//	}
+//	cout << endl;
+//
+//
+//	delete[] p;
+//	p = nullptr;
+//}
+
+
+//int main()
+//{
+//	unsigned rows = 3;
+//	unsigned columns = 2;
+//
+//	int** numbers = new int* [rows] {};
+//
+//	for (unsigned i = 0; i < rows; i++)
+//	{
+//		numbers[i] = new int[columns] {};
+//	}
+//
+//	for (unsigned i = 0; i < rows; i++)
+//	{
+//		delete[] numbers[i];
+//	}
+//	delete[] numbers;
+//}
+
+//int main()
+//{
+//	unsigned rows = 3;
+//	unsigned columns = 2;
+//
+//	int** numbers = new int* [rows] {};
+//
+//	for (unsigned i = 0; i < rows; i++)
+//	{
+//		numbers[i] = new int[columns] {};
+//	}
+//
+//	for (unsigned i = 0; i < rows; i++)
+//	{
+//		cout << "Enter data for: " << (i + 1) << " row" << endl;
+//
+//		for (unsigned j = 0; j < columns; j++)
+//		{
+//			cout << (j + 1) << " Column: ";
+//			cin >> numbers[i][j];
+//		}
+//	}
+//
+//
+//	for (unsigned i = 0; i < rows; i++)
+//	{
+//		for (unsigned j = 0; j < columns; j++)
+//		{
+//			cout << numbers[i][j] << "\t";
+//		}
+//		cout << endl;
+//	}
+//
+//
+//	for (unsigned i = 0; i < rows; i++)
+//	{
+//		delete[] numbers[i];
+//	}
+//	delete[] numbers;
+//}
+
+
+//int main()
+//{
+//	unsigned n{ 3 };
+//	int (*a)[2] = new int[n][2];
+//
+//	int k = 0;
+//
+//	for (unsigned i = 0; i < n; i++)
+//	{
+//		for (unsigned j = 0; j < 2; j++)
+//		{
+//			a[i][j] = ++k;
+//		}
+//	}
+//
+//	for (unsigned i = 0; i < n; i++)
+//	{
+//		for (unsigned j = 0; j < 2; j++)
+//		{
+//			cout << a[i][j] << "\t";
+//		}
+//		cout << endl;
+//	}
+//
+//	delete[] a;
+//	a = nullptr;
+//}
