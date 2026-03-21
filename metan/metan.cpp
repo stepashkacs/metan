@@ -3485,3 +3485,185 @@ using namespace std;
 //	cout << "Nmae: " << person.name << "\tAge: " << person.age << endl;
 //}
 
+//class Person
+//{
+//public:
+//	string name;
+//	unsigned age;
+//	void print()
+//	{
+//		cout << "Name: " << name << "\tAge: " << age << endl;
+//	}
+//	Person(string p_name, unsigned p_age)
+//	{
+//		name = p_name;
+//		age = p_age;
+//		cout << "Person has been created" << endl;
+//	}
+//};
+//
+//int main()
+//{
+//	Person tom("Tom", 52);
+//	tom.print();
+//	Person ben("Ben", 17);
+//	ben.print();
+//	Person sam("Sam", 22);
+//	sam.print();
+//}
+
+
+//class Person
+//{
+//public:
+//	string name;
+//	unsigned age;
+//	void print()
+//	{
+//		cout << "Name: " << name << "\tAge: " << age << endl;
+//	}
+//
+//
+//	Person(string p_name, unsigned p_age)
+//	{
+//		name = p_name;
+//		age = p_age;
+//	}
+//
+//
+//	Person(string p_name)
+//	{
+//		name = p_name;
+//		age = 18;
+//	}
+//
+//
+//	Person()
+//	{
+//		name = "Undefined";
+//		age = 18;
+//	}
+//};
+//
+//int main()
+//{
+//	Person tom("Tom", 52); // вызываем конструктор Person(std::string p_name, unsigned p_age)
+//	tom.print();
+//	Person ben("Ben"); // вызываем конструктор Person(std::string p_name)
+//	ben.print();
+//	Person sam;
+//	sam.print(); // вызываем конструктор Person()
+//}
+
+
+//class Person
+//{
+//public:
+//	string name;
+//	unsigned age;
+//	void print()
+//	{
+//		cout << "Name: " << name << "\tAge: " << age << endl;
+//	}
+//
+//	Person(string p_name, unsigned p_age)
+//	{
+//		name = p_name;
+//		age = p_age;
+//		cout << "First constructor" << endl;
+//	}
+//
+//	Person(string p_name) : Person(p_name, 18)
+//	{
+//		cout << "Second constructor" << endl;
+//	}
+//
+//	Person() : Person(string("Undefined"))
+//	{
+//		cout << "Third construcotr" << endl;
+//	}
+//
+//};
+//
+//
+//int main()
+//{
+//	Person tom("Tom", 52); // вызываем конструктор Person(std::string p_name, unsigned p_age)
+//	tom.print();
+//	Person ben("Ben"); // вызываем конструктор Person(std::string p_name)
+//	ben.print();
+//	Person sam;
+//	sam.print(); // вызываем конструктор Person()
+//}
+
+
+//class Person
+//{
+//	string name;
+//	unsigned age;
+//public:
+//	Person(string p_name = "Undefined", unsigned p_age = 18)
+//	{
+//		name = p_name;
+//		age = p_age;
+//	}
+//	void print()
+//	{
+//		cout << "Name: " << name << "\tAge: " << age << endl;
+//	}
+//
+//};
+//
+//int main()
+//{
+//	Person tom("Tom", 52); // вызываем конструктор Person(std::string p_name, unsigned p_age)
+//	tom.print();
+//	Person ben("Ben"); // вызываем конструктор Person(std::string p_name)
+//	ben.print();
+//	Person sam;
+//	sam.print(); // вызываем конструктор Person()
+//}
+
+
+//class Person
+//{
+//	const string name;
+//	unsigned age;
+//public:
+//	void print()
+//	{
+//		cout << "Name: " << name << "\tAge: " << age << endl;
+//	}
+//	Person(string p_name, unsigned p_age) : name{p_name}
+//	{
+//		age = p_age;
+//	}
+//};
+//
+//int main()
+//{
+//	Person tom("Tom", 52); // вызываем конструктор Person(std::string p_name, unsigned p_age)
+//	tom.print();
+//	
+//}
+
+//
+//class Person
+//{
+//	const string name;
+//	unsigned age;
+//public:
+//	void print()
+//	{
+//		cout << "Name: " << name << "\tAge: " << age << endl;
+//	}
+//	Person(string p_name, unsigned p_age) : name(p_name), age(p_age)
+//	{	}
+//};
+//
+//int main()
+//{
+//	Person tom("Tom", 52); // вызываем конструктор Person(std::string p_name, unsigned p_age)
+//	tom.print();
+//
+//}
