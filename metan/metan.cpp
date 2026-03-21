@@ -4003,3 +4003,138 @@ using namespace std;
 //	tom.age = 22;
 //	tom.print();
 //}
+
+
+//class Point
+//{
+//public:
+//	Point(int x, int y)
+//	{
+//		this->x = x;
+//		this->y = y;
+//	}
+//	void showCoords()
+//	{
+//		cout << "Point x: " << x << "\tPoint y: " << y << endl;
+//	}
+//private:
+//	int x;
+//	int y;
+//};
+//
+//int main()
+//{
+//	Point p1{ 20, 21 };
+//	p1.showCoords();
+//}
+
+
+//class Point
+//{
+//public:
+//	Point(int x, int y)
+//	{
+//		this->x = x;
+//		this->y = y;
+//	}
+//	void showCoords()
+//	{
+//		cout << "Point x: " << x << "\tPoint y: " << y << endl;
+//	}
+//	Point& move(int x, int y)
+//	{
+//		this->x += x;
+//		this->y += y;
+//		return *this;
+//	}
+//
+//
+//
+//private:
+//	int x;
+//	int y;
+//};
+//
+//int main()
+//{
+//	Point p1{ 20, 21 };
+//	p1.showCoords();
+//	p1.move(10, 5).move(10, 10);
+//	p1.showCoords();
+//}
+
+
+//class Point
+//{
+//public:
+//	Point(int x, int y)
+//	{
+//		this->x = x;
+//		this->y = y;
+//	}
+//	void showCoords()
+//	{
+//		cout << "Point x: " << x << "\tPoint y: " << y << endl;
+//	}
+//	Point* move(int x, int y)
+//	{
+//		this->x += x;
+//		this->y += y;
+//		return this;
+//	}
+//
+//
+//
+//private:
+//	int x;
+//	int y;
+//};
+//
+//int main()
+//{
+//	Point p1{ 20, 21 };
+//	p1.showCoords();
+//	p1.move(10, 5)->move(10, 10)->move(10, 15);
+//	p1.showCoords();
+//}
+
+
+//class Integer
+//{
+//public:
+//	Integer(int number)
+//	{
+//		value = number;
+//	}
+//
+//	Integer& add (const Integer& obj)
+//	{
+//		value += obj.value;
+//		return *this;
+//	}
+//
+//	Integer& subtract(const Integer& obj)
+//	{
+//		value -= obj.value;
+//		return *this;
+//	}
+//
+//	Integer& multiply(const Integer& obj)
+//	{
+//		value *= obj.value;
+//		return *this;
+//	}
+//	void print()
+//	{
+//		std::cout << "Value: " << value << std::endl;
+//	}
+//private:
+//	int value;
+//};
+//
+//int main()
+//{
+//	Integer num{ 10 };
+//	num.add(Integer{ 30 }).subtract(Integer{ 15 }).multiply(Integer{ 3 });
+//	num.print();
+//}
