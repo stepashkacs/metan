@@ -3401,3 +3401,87 @@ using namespace std;
 //		cout << "pnumbers[" << i << "]  = " << pnumbers[i] << endl;
 //	}
 //}
+
+
+//class Person
+//{
+//public:
+//	string name;
+//	unsigned age;
+//	void print()
+//	{
+//		cout << "Nmae: " << name << "\tAge: " << age << endl;
+//	}
+//};
+//
+//int main()
+//{
+//	Person person;
+//	person.name = "Tom";
+//	person.age = 19;
+//	person.print();
+//}
+
+
+//class Person
+//{
+//public:
+//	string name;
+//	unsigned age;
+//	void print()
+//	{
+//		cout << "Nmae: " << name << "\tAge: " << age << endl;
+//	}
+//};
+//
+//int main()
+//{
+//	Person person;
+//	person.name = "Tom";
+//	string personname = person.name;
+//	person.age = 19;
+//	unsigned personage = person.age;
+//	cout << "Nmae: " << personname << "\tAge: " << personage << endl;
+//}
+
+
+//class Person
+//{
+//public:
+//	unsigned age = 18;
+//	string name = "Undefined";
+//
+//	void print()
+//	{
+//		cout << "Name: " << name << "\tAge: " << age << endl;
+//	}
+//};
+//
+//int main()
+//{
+//	Person person;
+//	person.print();
+//
+//}
+
+
+//class Person
+//{
+//public:
+//	string name;
+//	unsigned age;
+//	void print()
+//	{
+//		cout << "Nmae: " << name << "\tAge: " << age << endl;
+//	}
+//};
+//
+//int main()
+//{
+//	Person person;
+//	Person* ptr = &person;
+//	ptr->name = "Tom";
+//	ptr->age = 22;
+//	cout << "Nmae: " << person.name << "\tAge: " << person.age << endl;
+//}
+
