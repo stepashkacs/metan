@@ -4295,3 +4295,139 @@ using namespace std;
 //	tom.setPrice(tesla, 6000);
 //	tesla.print();
 //}
+
+
+//class Person
+//{
+//public:
+//	Person(string p_name, unsigned p_age)
+//	{
+//		++count;
+//		name = p_name;
+//		age = p_age;
+//	}
+//
+//	void print_count()
+//	{
+//		cout << "Created " << count << " objects" << endl;
+//	}
+//private:
+//	string name;
+//	unsigned age;
+//	static inline unsigned count{}; // статическое поле - счетчик объектов Person
+//};
+//
+//int main()
+//{
+//	Person tom{ "Tom", 21 };
+//	Person bob{ "Bom", 25 };
+//	Person sam{ "Sam", 31 };
+//	Person anton{ "Anton", 19 };
+//	tom.print_count();
+//	bob.print_count();
+//	sam.print_count();
+//	anton.print_count();
+//}
+
+
+//class Person
+//{
+//public:
+//	Person(string p_name, unsigned p_age)
+//	{
+//		++count;
+//		name = p_name;
+//		age = p_age;
+//	}
+//
+//	static void print_count()
+//	{
+//		cout << "Created " << count << " objects" << endl;
+//	}
+//private:
+//	string name;
+//	unsigned age;
+//	static inline unsigned count{}; // статическое поле - счетчик объектов Person
+//};
+//
+//int main()
+//{
+	//Person tom{ "Tom", 21 };
+	//Person bob{ "Bom", 25 };
+	//Person sam{ "Sam", 31 };
+//	Person anton{ "Anton", 19 };
+//	Person::print_count();
+//}
+
+
+
+//class Person
+//{
+//public:
+//	static inline unsigned maxAge{ 120 };
+//	Person(string p_name, unsigned p_age)
+//	{
+//		++count;
+//		name = p_name;
+//		if (age < maxAge)
+//			age = p_age;
+//	}
+//
+//	static void print_count()
+//	{
+//		cout << "Created " << count << " objects" << endl;
+//	}
+//
+//private:
+//	string name;
+//	unsigned age{ 1 };
+//	static inline unsigned count{};
+//};
+//
+//int main()
+//{
+//	Person tom{ "Tom", 21 };
+//	Person bob{ "Bom", 25 };
+//	Person sam{ "Sam", 31 };
+//
+//	Person::print_count();
+//	cout << "Max Age: " << Person::maxAge << endl;
+//	Person::maxAge = 110;
+//	cout << "Max Age: " << Person::maxAge << endl;
+//
+//}
+
+
+class Person
+{
+public:
+	static inline unsigned const maxAge{ 120 };
+	Person(string p_name, unsigned p_age)
+	{
+		++count;
+		name = p_name;
+		if (age < maxAge)
+			age = p_age;
+	}
+
+	static void print_count()
+	{
+		cout << "Created " << count << " objects" << endl;
+	}
+
+private:
+	string name;
+	unsigned age{ 1 };
+	static inline unsigned count{};
+};
+
+int main()
+{
+	Person tom{ "Tom", 21 };
+	Person bob{ "Bom", 25 };
+	Person sam{ "Sam", 31 };
+
+	Person::print_count();
+	cout << "Max Age: " << Person::maxAge << endl;
+
+}
