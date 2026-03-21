@@ -3849,3 +3849,157 @@ using namespace std;
 //	Person tomas{ tom };    // конструктор копирования отсутствует
 //	tomas.print();    // не сработает
 //}
+
+//class Person
+//{
+//public:
+//	string name;
+//	unsigned age;
+//	Person(string p_name, unsigned p_age)
+//	{
+//		name = p_name;
+//		age = p_age;
+//	}
+//
+//};
+//
+//int main()
+//{
+//	const Person tom{ "Tom", 32 };
+//	// мы можем получить данные константы
+//	std::cout << "Name: " << tom.name << "\tAge: " << tom.age << std::endl;
+//	// но изменить их нельзя
+//	// tom.name = "Tom";    // ! Ошибка
+//	// tom.age = 38;        // ! Ошибка
+//}
+
+
+//class Person
+//{
+//private:
+//	string name;
+//	unsigned age;
+//public:
+//
+//	Person(string p_name, unsigned p_age)
+//	{
+//		name = p_name;
+//		age = p_age;
+//	}
+//
+//	void print()
+//	{
+//		cout << "Name: " << name << "\tAge: " << age << endl;
+//	}
+//};
+//
+//int main()
+//{
+//	const Person tom{ "Tom", 32 };
+//	tom.print(); // ошибка
+//}
+
+
+//class Person
+//{
+//private:
+//	string name;
+//	unsigned age;
+//public:
+//
+//	Person(string p_name, unsigned p_age)
+//	{
+//		name = p_name;
+//		age = p_age;
+//	}
+//
+//
+//	string getName() const
+//	{
+//		return name;
+//	}
+//
+//
+//	unsigned getAge() const
+//	{
+//		return age;
+//	}
+//
+//	void print() const
+//	{
+//		cout << "Name: " << getName() << "\tAge: " << getAge() << endl;
+//	}
+//};
+//
+//int main()
+//{
+//	const Person tom{ "Tom", 32 };
+//	tom.print(); // скомпилируется
+//	const Person bob{ "Bob", 23 };
+//	bob.print();
+//}
+
+
+//class Person
+//{
+//private:
+//	string name;
+//	unsigned age;
+//public:
+//
+//	Person(string p_name, unsigned p_age)
+//	{
+//		name = p_name;
+//		age = p_age;
+//	}
+//
+//
+//	const string &getName() const
+//	{
+//		return name;
+//	}
+//
+//
+//	const unsigned* getAge() const
+//	{
+//		return &age;
+//	}
+//
+//	void print() const
+//	{
+//		cout << "Name: " << getName() << "\tAge: " << getAge() << endl;
+//	}
+//};
+//
+//int main()
+//{
+//	const Person tom{ "Tom", 32 };
+//	string tom_name = tom.getName();
+//	const unsigned *tom_age = tom.getAge();
+//
+//	cout << "Name: " << tom_name << "\tAge: " << *tom_age << endl;
+//}
+
+
+//class Person
+//{
+//public:
+//	string name;
+//	mutable unsigned age;
+//	Person(string p_name, unsigned p_age)
+//	{
+//		name = p_name;
+//		age = p_age;
+//	}
+//	void print() const
+//	{
+//		cout << "Name: " << name << "\tAge: " << age << endl;
+//	}
+//};
+//
+//int main()
+//{
+//	const Person tom{ "Tom", 21 };
+//	tom.age = 22;
+//	tom.print();
+//}
