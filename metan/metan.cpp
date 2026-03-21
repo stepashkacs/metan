@@ -4138,3 +4138,160 @@ using namespace std;
 //	num.add(Integer{ 30 }).subtract(Integer{ 15 }).multiply(Integer{ 3 });
 //	num.print();
 //}
+
+//class Auto
+//{
+//	friend void drive(const Auto&);
+//	friend void setPrice(Auto&, unsigned);
+//
+//public:
+//	Auto(string autoName, unsigned autoPrice)
+//	{
+//		name = autoName;
+//		price = autoPrice;
+//	}
+//	void print()
+//	{
+//		cout << name << " " << price << endl;
+//	}
+//private:
+//	string name;
+//	unsigned price;
+//};
+//
+//void drive(const Auto& car)
+//{
+//	cout << car.name << " is driven" << endl;
+//}
+//
+//void setPrice(Auto& car, unsigned price)
+//{
+//	car.price = price;
+//}
+//
+//int main()
+//{
+//	Auto tesla{ "Tesla", 21000 };
+//	tesla.print();
+//	drive(tesla);
+//	setPrice(tesla, 20000);
+//	tesla.print();
+//}
+
+//class Auto;
+//
+//class Person
+//{
+//public:
+//	Person(string p_name)
+//	{
+//		name = p_name;
+//	}
+//	void drive(const Auto&);
+//	void setPrice(Auto&, unsigned);
+//private:
+//	string name;
+//};
+//
+//class Auto
+//{
+//	friend void Person::drive(const Auto&);
+//	friend void Person::setPrice(Auto&, unsigned);
+//
+//public:
+//	Auto(string a_name, unsigned a_price)
+//	{
+//		name = a_name;
+//		price = a_price;
+//	}
+//
+//	void print()
+//	{
+//		std::cout << name << " : " << price << std::endl;
+//
+//	}
+//
+//private:
+//	string name;
+//	unsigned price;
+//
+//};
+//
+//void Person::drive(const Auto& car)
+//{
+//	std::cout << name << " drives " << car.name << std::endl;
+//}
+//void Person::setPrice(Auto& car, unsigned price)
+//{
+//	car.price = price;
+//}
+//
+//
+//int main()
+//{
+//	Auto tesla{ "Tesla", 5000 };
+//	Person tom{ "Tom" };
+//	tom.drive(tesla);
+//	tom.setPrice(tesla, 6000);
+//	tesla.print();
+//}
+
+
+
+
+//class Auto;
+//
+//class Person
+//{
+//public:
+//	Person(string p_name)
+//	{
+//		name = p_name;
+//	}
+//	void drive(const Auto&);
+//	void setPrice(Auto&, unsigned);
+//private:
+//	string name;
+//};
+//
+//class Auto
+//{
+//	friend class Person;
+//
+//public:
+//	Auto(string a_name, unsigned a_price)
+//	{
+//		name = a_name;
+//		price = a_price;
+//	}
+//
+//	void print()
+//	{
+//		std::cout << name << " : " << price << std::endl;
+//
+//	}
+//
+//private:
+//	string name;
+//	unsigned price;
+//
+//};
+//
+//void Person::drive(const Auto& car)
+//{
+//	std::cout << name << " drives " << car.name << std::endl;
+//}
+//void Person::setPrice(Auto& car, unsigned price)
+//{
+//	car.price = price;
+//}
+//
+//
+//int main()
+//{
+//	Auto tesla{ "Tesla", 5000 };
+//	Person tom{ "Tom" };
+//	tom.drive(tesla);
+//	tom.setPrice(tesla, 6000);
+//	tesla.print();
+//}
