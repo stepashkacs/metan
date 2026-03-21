@@ -3667,3 +3667,86 @@ using namespace std;
 //	tom.print();
 //
 //}
+
+
+//class Person
+//{
+//private:
+//	string name;
+//	unsigned age;
+//public:
+//	void print()
+//	{
+//		cout << "Name: " << name << "\tAge: " << age << endl;
+//	}
+//
+//	Person(string p_name, unsigned p_age) : name(p_name), age(p_age)
+//	{
+//	}
+//};
+//
+//
+//int main()
+//{
+//	Person tom{ "Tom", 38 };
+//	// пол€ name, age и функци€ print общедоступные
+//	//tom.name = "Tomas"; // нельз€ обращ€тс€
+//	//tom.age = 22; //нельз€ обращ€тс€
+//	tom.print();    // Name: Tomas   Age: 38
+//}
+
+
+//class Person
+//{
+//private:
+//	string name;
+//	unsigned age;
+//public:
+//
+//	Person(string p_name, unsigned p_age)
+//	{
+//		name = p_name;
+//		if (p_age > 0 && p_age < 110)
+//		{
+//			age = p_age;
+//		}
+//		else age = 18;
+//	}
+//
+//	void print()
+//	{
+//		cout << "Name: " << name << "\tAge: " << age << endl;
+//	}
+//
+//
+//	void setAge(unsigned p_age)
+//	{
+//		if (p_age > 0 && p_age < 110)
+//		{
+//			age = p_age;
+//		}
+//	}
+//
+//	string getName()
+//	{
+//		return name;
+//	}
+//
+//	unsigned getAge()
+//	{
+//		return age;
+//	}
+//};
+//
+//int main()
+//{
+//	Person tom{ "Tom", 38 };
+//	// измен€ем возраст
+//	tom.setAge(22);
+//	tom.setAge(123);
+//	tom.print();    // Name: Tom   Age: 22
+//
+//	//отдельно получаем им€
+//	std::cout << "Person name: " << tom.getName() << std::endl;
+//	std::cout << "Person age: " << tom.getAge() << std::endl;
+//}
