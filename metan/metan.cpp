@@ -3750,3 +3750,40 @@ using namespace std;
 //	std::cout << "Person name: " << tom.getName() << std::endl;
 //	std::cout << "Person age: " << tom.getAge() << std::endl;
 //}
+
+
+//class Person
+//{
+//private:
+//	string name;
+//	unsigned age;
+//
+//public:
+//	Person(string p_name, unsigned p_age);
+//	Person(string p_name);
+//	void print();
+//};
+//
+////контсруктор
+//Person::Person(string p_name, unsigned p_age)
+//{
+//	name = p_name;
+//	age = p_age;
+//}
+//
+//Person::Person(string p_name) : Person(p_name, 18)
+//{
+//}
+//
+//void Person::print()
+//{
+//	cout << "Name: " << name << "\tAge: " << age << endl;
+//}
+//
+//int main()
+//{
+//	Person tom{ "Tom", 39 };
+//	tom.print();    // Name: Tom   Age: 39
+//	Person bob{ "Bob" };
+//	bob.print();    // Name: Bob   Age: 18
+//}
