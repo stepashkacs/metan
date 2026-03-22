@@ -4494,3 +4494,42 @@ using namespace std;
 //
 //	Person tom{ "Tom" };
 //}// объект Sam уничтожается
+
+
+//struct person
+//{
+//	unsigned age;
+//	string name;
+//};
+//
+//int main()
+//{
+//	person tom;
+//	tom.name = "Tom";
+//	tom.age = 12;
+//	cout << "Name: " << tom.name << "\tAge: " << tom.age << endl;
+//}
+
+
+//struct Person
+//{
+//public:
+//	Person(string p_name, unsigned p_age): name{p_name}, age{p_age}
+//	{ }
+//	void print()
+//	{
+//		cout << "Name: " << name << "\tAge: " << age << endl;
+//	}
+//
+//private:
+//	string name;
+//	unsigned age;
+//
+//};
+//
+//
+//int main()
+//{
+//	Person bob{ "Bob", 23 };
+//	bob.print();
+//}
