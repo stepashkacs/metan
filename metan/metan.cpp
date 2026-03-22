@@ -4533,3 +4533,63 @@ using namespace std;
 //	Person bob{ "Bob", 23 };
 //	bob.print();
 //}
+
+
+//enum class Day { Monday, Tuesday, Wednesday, Thursday, Friday, Saturday, Sunday };
+//int main()
+//{
+//	Day today = Day::Thursday;
+//	//Day today{ Day::Thursday };
+//	cout << "Today: " << static_cast<int>(today) << endl;
+//}
+
+
+//enum class Operation: char {Add = '+', Subtract = '-', Multiply = '*' };
+//int main()
+//{
+//	cout << "add: " << static_cast<char>(Operation::Add) << endl;
+//	cout << "subtract: " << static_cast<char>(Operation::Subtract) << endl;
+//	cout << "multiply: " << static_cast<char>(Operation::Multiply) << endl;
+//}
+
+
+//enum class Operation{Add, Subtract, Multiply};
+//
+//void calculate(int n1, int n2, Operation op)
+//{
+//	switch(op)
+//	{
+//		case Operation::Add:
+//			cout << n1 + n2 << endl;
+//			break;
+//		case Operation::Subtract:
+//			cout << n1 - n2 << endl;
+//			break;
+//		case Operation::Multiply:
+//			cout << n1 * n2 << endl;
+//	}
+//}
+//
+//int main()
+//{
+//	calculate(10, 6, Operation::Add);
+//	calculate(10, 6, Operation::Subtract);
+//	calculate(10, 6, Operation::Multiply);
+//}
+
+//enum class Day { Monday, Tuesday, Wednesday, Thursday, Friday, Saturday, Sunday };
+//using enum Day;
+//
+//int main()
+//{
+//	Day today{ Tuesday };
+//	cout << static_cast<int>(today) << endl;
+//	cout << static_cast<int>(Sunday) << endl;
+//}
+
+//enum Day { Monday, Tuesday, Wednesday, Thursday, Friday, Saturday, Sunday };
+//int main()
+//{
+//	Day today = Tuesday;
+//	cout << today << endl;
+//}
