@@ -4811,3 +4811,152 @@ using namespace std;
 //	Employee bob{ "Bob", 25 , "RockStar" };
 //	bob.print();
 //}
+
+
+//class Person
+//{
+//public:
+//	Person(string name, unsigned age)
+//	{
+//		this->name = name;
+//		this->age = age;
+//	}
+//
+//	void print() const
+//	{
+//		std::cout << "Name: " << name << "\tAge: " << age << std::endl;
+//	}
+//
+//protected:
+//	string name;
+//
+//private:
+//	unsigned age;
+//};
+//
+//class Employee : public Person
+//{
+//public:
+//	Employee(std::string name, unsigned age, std::string company) : Person(name, age)
+//	{
+//		this->company = company;
+//	}
+//
+//	void printEmployee() const
+//	{
+//		cout << name << " works in " << company << endl;
+//	}
+//
+//private:
+//	string company;
+//};
+//
+//int main()
+//{
+//	Person tom{ "Tom", 22 };
+//	tom.print();
+//
+//	Employee bob{ "Bob", 25, "Microsoft" };
+//	bob.printEmployee();
+//}
+
+
+
+//class Person
+//{
+//public:
+//	Person(string name, unsigned age)
+//	{
+//		this->name = name;
+//		this->age = age;
+//	}
+//
+//	void print() const
+//	{
+//		std::cout << "Name: " << name << "\tAge: " << age << std::endl;
+//	}
+//
+//protected:
+//	string name;
+//
+//private:
+//	unsigned age;
+//};
+//
+//class Employee : private Person
+//{
+//public:
+//	Employee(std::string name, unsigned age, std::string company) : Person(name, age)
+//	{
+//		this->company = company;
+//	}
+//
+//	void printEmployee() const
+//	{
+//		print();
+//		cout << name << " works in " << company << endl;
+//	}
+//
+//private:
+//	string company;
+//};
+//
+//int main()
+//{
+//	//Person tom{ "Tom", 22 };
+//	//tom.printEmployee();
+//
+//	Employee bob{ "Bob", 25, "Microsoft" };
+//	bob.printEmployee();
+//}
+
+
+//class Person
+//{
+//public:
+//	Person(string name, unsigned age)
+//	{
+//		this->name = name;
+//		this->age = age;
+//	}
+//
+//	void print() const
+//	{
+//		std::cout << "Name: " << name << "\tAge: " << age << std::endl;
+//	}
+//
+//protected:
+//	string name;
+//
+//private:
+//	unsigned age;
+//};
+//
+//class Employee : private Person
+//{
+//public:
+//	Employee(std::string name, unsigned age, std::string company) : Person(name, age)
+//	{
+//		this->company = company;
+//	}
+//
+//	using Person::print;
+//
+//	void printEmployee() const
+//	{
+//		print();
+//		cout << name << " works in " << company << endl;
+//	}
+//
+//private:
+//	string company;
+//};
+//
+//int main()
+//{
+//	//Person tom{ "Tom", 22 };
+//	//tom.printEmployee();
+//
+//	Employee bob{ "Bob", 25, "Microsoft" };
+//	bob.print();
+//}
