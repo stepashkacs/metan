@@ -5117,3 +5117,121 @@ using namespace std;
 //	employee.printEmployee();   // Bob works in Microsoft
 //	employee.print();       // функция print недоступна
 //}
+
+
+//class Person
+//{
+//public:
+//	Person(string name, unsigned age) :name(name), age(age)
+//	{ }
+//
+//	void print()
+//	{
+//		cout << "Name: " << name << "\tAge: " << age << endl;
+//	}
+//
+//private:
+//	string name;
+//	unsigned age;
+//};
+//
+//
+//class Employee: public Person
+//{
+//public:
+//	Employee(string name, unsigned age, string company) : Person(name, age), company(company)
+//	{
+//		
+//	}
+//private:
+//	string company;
+//};
+//
+//int main()
+//{
+//	Employee tom{ "Tom", 21, "Google" };
+//	tom.print();
+//}
+
+
+//class Person
+//{
+//public:
+//	Person(string name, unsigned age) :name(name), age(age)
+//	{
+//	}
+//
+//	void print() const
+//	{
+//		cout << "Name: " << name << "\tAge: " << age << endl;
+//	}
+//
+//private:
+//	string name;
+//	unsigned age;
+//};
+//
+//
+//class Employee : public Person
+//{
+//public:
+//	Employee(string name, unsigned age, string company) : Person(name, age), company(company)
+//	{
+//
+//	}
+//	void print() const
+//	{
+//		Person::print();
+//		cout << "Works in " << company << endl;
+//	}
+//
+//private:
+//	string company;
+//};
+//
+//int main()
+//{
+//	Employee tom{ "Tom", 21, "Google" };
+//	tom.print();
+//}
+
+
+
+//class Integer
+//{
+//public:
+//	Integer(unsigned value) : value(value)
+//	{
+//	}
+//
+//	void printInteger() const
+//	{
+//		cout << value << endl;
+//	}
+//
+//protected:
+//	unsigned value;
+//};
+//
+//
+//class Decimal : public Integer
+//{
+//public:
+//	Decimal(unsigned i_value, unsigned d_value) : Integer(i_value), value(d_value)
+//	{ }
+//
+//	void printDecimal()
+//	{
+//		cout << Integer::value << '.' << value << endl;
+//	}
+//
+//protected:
+//	unsigned value;
+//};
+//
+//int main()
+//{
+//	Decimal decimal{ 1234, 4321 };
+//	decimal.printInteger();
+//	decimal.printDecimal();
+//}
