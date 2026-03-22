@@ -4960,3 +4960,160 @@ using namespace std;
 //	Employee bob{ "Bob", 25, "Microsoft" };
 //	bob.print();
 //}
+
+//class Person
+//{
+//public:
+//	Person(string name, unsigned age)
+//	{
+//		this->name = name;
+//		this->age = age;
+//	}
+//
+//	void print() const
+//	{
+//		std::cout << "Name: " << name << "\tAge: " << age << std::endl;
+//	}
+//
+//protected:
+//	string name;
+//
+//private:
+//	unsigned age;
+//};
+//
+//class Employee : public Person
+//{
+//public:
+//	Employee(std::string name, unsigned age, std::string company) : Person(name, age)
+//	{
+//		this->company = company;
+//	}
+//
+//	using Person::print;
+//
+//	void printEmployee() const
+//	{
+//		print();
+//		cout << name << " works in " << company << endl;
+//	}
+//
+//private:
+//	string company;
+//};
+//
+//int main()
+//{
+//	Person tom{ "Tom", 22 };
+//	tom.print();
+//
+//	Employee bob{ "Bob", 25, "Microsoft" };
+//	bob.printEmployee();
+//}
+//
+//
+//Если члены базового класса определены со спецификатором private, то в производном классе они в принципе недоступны независимо от спецификатора доступа к базовому классу.
+//
+//Если спецификатор базового класса - public, то уровень доступа унаследованных членов остается неизменным.
+//Таким образом, унаследованные открытые члены являются общедоступными, а унаследованные члены со спецификатором protected сохраняют этот спецификатор и в производном классе.
+//
+//Если спецификатор базового класса - protected, то все унаследованные члены со спецификатором protected и public в производном классе наследуются как protected.
+//Смысл этого состоит в том, что если у производного класса будут свои классы - наследники, то в этих классах - наследниках также можно обращаться к подобным членам базового класса.
+//
+//Если спецификатор базового класса - private, то все унаследованные члены со спецификатором protected и public в производном классе наследуются как private.
+//Они доступны в любой функции производного класса, но вне производного класса(в том числе у его наследников) они не доступны.
+
+
+//class Person
+//{
+//public:
+//	Person(string name, unsigned age)
+//	{
+//		this->name = name;
+//		this->age = age;
+//	}
+//
+//	void print() const
+//	{
+//		std::cout << "Name: " << name << "\tAge: " << age << std::endl;
+//	}
+//
+//protected:
+//	string name;
+//
+//private:
+//	unsigned age;
+//};
+//
+//class Employee : private Person
+//{
+//public:
+//	Employee(std::string name, unsigned age, std::string company) : Person(name, age)
+//	{
+//		this->company = company;
+//	}
+//
+//	void printEmployee() const
+//	{
+//		print();
+//		cout << name << " works in " << company << endl;
+//	}
+//
+//private:
+//	string company;
+//};
+//
+//int main()
+//{
+//	Employee employee{ "Bob", 42, "Microsoft" };
+//	employee.printEmployee();   // Bob works in Microsoft
+//	//employee.print();       // функция print недоступна
+//}
+
+
+//class Person
+//{
+//public:
+//	Person(string name, unsigned age)
+//	{
+//		this->name = name;
+//		this->age = age;
+//	}
+//
+//	void print() const
+//	{
+//		std::cout << "Name: " << name << "\tAge: " << age << std::endl;
+//	}
+//
+//protected:
+//	string name;
+//
+//private:
+//	unsigned age;
+//};
+//
+//class Employee : private Person
+//{
+//public:
+//	Employee(std::string name, unsigned age, std::string company) : Person(name, age)
+//	{
+//		this->company = company;
+//	}
+//	using Person::print;
+//
+//	void printEmployee() const
+//	{
+//		print();
+//		cout << name << " works in " << company << endl;
+//	}
+//
+//private:
+//	string company;
+//};
+//
+//int main()
+//{
+//	Employee employee{ "Bob", 42, "Microsoft" };
+//	employee.printEmployee();   // Bob works in Microsoft
+//	employee.print();       // функция print недоступна
+//}
