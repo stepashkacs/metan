@@ -4398,36 +4398,99 @@ using namespace std;
 //}
 
 
-class Person
-{
-public:
-	static inline unsigned const maxAge{ 120 };
-	Person(string p_name, unsigned p_age)
-	{
-		++count;
-		name = p_name;
-		if (age < maxAge)
-			age = p_age;
-	}
+//class Person
+//{
+//public:
+//	static inline unsigned const maxAge{ 120 };
+//	Person(string p_name, unsigned p_age)
+//	{
+//		++count;
+//		name = p_name;
+//		if (age < maxAge)
+//			age = p_age;
+//	}
+//
+//	static void print_count()
+//	{
+//		cout << "Created " << count << " objects" << endl;
+//	}
+//
+//private:
+//	string name;
+//	unsigned age{ 1 };
+//	static inline unsigned count{};
+//};
+//
+//int main()
+//{
+//	Person tom{ "Tom", 21 };
+//	Person bob{ "Bom", 25 };
+//	Person sam{ "Sam", 31 };
+//
+//	Person::print_count();
+//	cout << "Max Age: " << Person::maxAge << endl;
+//
+//}
 
-	static void print_count()
-	{
-		cout << "Created " << count << " objects" << endl;
-	}
 
-private:
-	string name;
-	unsigned age{ 1 };
-	static inline unsigned count{};
-};
+//class Person
+//{
+//public:
+//	Person(string p_name)
+//	{
+//		name = p_name;
+//		cout << "Person " << name << " created" << endl;
+//	}
+//
+//	~Person()
+//	{
+//		cout << "Person " << name << " deleted" << endl;
+//	}
+//
+//private:
+//	string name;
+//};
+//
+//int main()
+//{
+//	{
+//		Person tom{ "Tom" };
+//		Person bob{ "Bob" };
+//	
+//	}// объекты Tom и Bob уничтожаются
+//
+//	Person tom{ "Tom" };
+//}// объект Sam уничтожается
 
-int main()
-{
-	Person tom{ "Tom", 21 };
-	Person bob{ "Bom", 25 };
-	Person sam{ "Sam", 31 };
 
-	Person::print_count();
-	cout << "Max Age: " << Person::maxAge << endl;
-
-}
+//class Person
+//{
+//public:
+//	Person(string p_name)
+//	{
+//		name = p_name;
+//		++count;
+//		cout << "Person " << name << " created. Count: " << count << endl;
+//	}
+//
+//	~Person()
+//	{
+//		--count;
+//		cout << "Person " << name << " deleted. Count: " << count << endl;
+//	}
+//
+//private:
+//	string name;
+//	static inline unsigned count{};
+//};
+//
+//int main()
+//{
+//	{
+//		Person tom{ "Tom" };
+//		Person bob{ "Bob" };
+//
+//	}// объекты Tom и Bob уничтожаются
+//
+//	Person tom{ "Tom" };
+//}// объект Sam уничтожается
