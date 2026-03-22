@@ -4593,3 +4593,221 @@ using namespace std;
 //	Day today = Tuesday;
 //	cout << today << endl;
 //}
+
+
+//class Person
+//{
+//public:
+//	void print() const
+//	{
+//		cout << "Name: " << name << "\tAge: " << age << endl;
+//	}
+//	string name;
+//	unsigned age;
+//};
+//
+//class Employee : public Person
+//{
+//public:
+//	string company;
+//};
+//
+//int main()
+//{
+//	Employee tom{ "Tom", 22 };
+//	tom.print();
+//	tom.age == 25;
+//
+//	Employee bob{ "Bob", 30 };
+//	bob.company = "Microsoft";
+//	bob.print();
+//}
+
+
+//class Person
+//{
+//public:
+//	Person(string name, unsigned age)
+//	{
+//		this->name = name;
+//		this->age = age;
+//	}
+//
+//	void print()
+//	{
+//		cout << "Name: " << name << "\tAge: " << age << endl;
+//	}
+//
+//private:
+//	string name;
+//	unsigned age;
+//};
+//
+//
+//class Employee : public Person
+//{
+//public:
+//	Employee(string name, unsigned age, string company) : Person(name, age)
+//	{
+//		this->company = company;
+//	}
+//
+//
+//private:
+//	string company;
+//};
+//
+//int main()
+//{
+//	Employee tom{ "Tom", 22, "Journey" };
+//	tom.print();
+//
+//	Employee bob{ "Bob", 25, "Miro" };
+//	bob.print();
+//}
+
+
+
+//class Person
+//{
+//public:
+//	Person(string name, unsigned age)
+//	{
+//		this->name = name;
+//		this->age = age;
+//	}
+//
+//	void print()
+//	{
+//		cout << "Name: " << name << "\tAge: " << age << endl;
+//	}
+//
+//private:
+//	string name;
+//	unsigned age;
+//};
+//
+//
+//class Employee : public Person
+//{
+//public:
+//	using Person::Person;
+//
+//};
+//
+//int main()
+//{
+//	Employee tom{ "Tom", 22 };
+//	tom.print();
+//
+//	Employee bob{ "Bob", 25 };
+//	bob.print();
+//}
+
+
+//class Person
+//{
+//public:
+//
+//	Person(const Person& person)
+//	{
+//		name = person.name;
+//		age = person.age;
+//	}
+//
+//	Person(string name, unsigned age)
+//	{
+//		this->name = name;
+//		this->age = age;
+//	}
+//
+//	void print()
+//	{
+//		cout << "Name: " << name << "\tAge: " << age << endl;
+//	}
+//
+//private:
+//	string name;
+//	unsigned age;
+//};
+//
+//
+//class Employee : public Person
+//{
+//public:
+//	Employee(string name, unsigned age, string company) : Person(name, age)
+//	{
+//		this->company = company;
+//	}
+//
+//	Employee(const Employee& employee) : Person(employee)
+//	{
+//		company = employee.company;
+//	}
+//private:
+//	string company;
+//};
+//
+//int main()
+//{
+//	Employee tom{ "Tom", 22 , "Google"};
+//	tom.print();
+//
+//	Employee bob{ "Bob", 25 , "RockStar"};
+//	bob.print();
+//}
+
+
+
+//class Person
+//{
+//public:
+//
+//	Person(string name, unsigned age)
+//	{
+//		this->name = name;
+//		this->age = age;
+//		cout << "Person Created" << endl;
+//	}
+//
+//	~Person()
+//	{
+//		cout << "Person Deleted" << endl;
+//	}
+//
+//	void print()
+//	{
+//		cout << "Name: " << name << "\tAge: " << age << endl;
+//	}
+//
+//private:
+//	string name;
+//	unsigned age;
+//};
+//
+//
+//class Employee : public Person
+//{
+//public:
+//	Employee(string name, unsigned age, string company) : Person(name, age)
+//	{
+//		this->company = company;
+//		std::cout << "Employee Created" << std::endl;
+//	}
+//
+//	~Employee()
+//	{
+//		std::cout << "Employee Deleted" << std::endl;
+//	}
+//private:
+//	string company;
+//};
+//
+//int main()
+//{
+//	Employee tom{ "Tom", 22 , "Google" };
+//	tom.print();
+//
+//	Employee bob{ "Bob", 25 , "RockStar" };
+//	bob.print();
+//}
